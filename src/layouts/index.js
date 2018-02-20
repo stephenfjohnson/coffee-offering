@@ -7,7 +7,10 @@ import './all.sass';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Coffee Offering" />
+    <Helmet>
+      <title>Coffee Offering</title>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" />
+    </Helmet>
     <Navbar />
     <div>{children()}</div>
   </div>
