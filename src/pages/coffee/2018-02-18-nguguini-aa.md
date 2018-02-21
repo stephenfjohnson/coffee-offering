@@ -1,8 +1,8 @@
 ---
 templateKey: coffee-page
-path: Kenya
-title: Kianjege AA
-date: 2018-02-21T00:00:00-08:00
+path: Kianjege AA
+title: Kenya
+date: 2018-02-21T08:00:00.000Z
 description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
 bags: '20'
 origin: Kenya
