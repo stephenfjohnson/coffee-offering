@@ -4,7 +4,7 @@ path: Kenya
 title: Nguguini AA
 date: 2018-02-21T01:09:18.167Z
 description: 'Sweet pineapple, fig, fresh coconut, vanilla, pinot noir, medium body.'
-bags: '12'
+bags: '20'
 origin: Kenya
 ---
 The Nguguini AA coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Nguguini wet mill which sources coffee from dozens of nano-farmers in the surrounding vicinity who's offering is exported by the coop.
