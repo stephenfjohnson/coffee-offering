@@ -1,6 +1,6 @@
 ---
 templateKey: coffee-page
-path: Kenya Kirinyaga
+path: Kenya
 title: Mukangu AA
 date: 2018-02-21T00:00:00-08:00
 description: 'Dark chocolate, cinnamon, blackberry, vermouth, lime, firm body.'
