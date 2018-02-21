@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Fragment>
-        <section className="hero is-medium is-dark is-dark">
+        <section className="hero is-medium is-dark">
           <div className="hero-body">
             <div className="container">
               <h1 className="title">Coffee Offering</h1>
@@ -63,8 +63,8 @@ export default class IndexPage extends React.Component {
                   <div className="column">Origin: Kenya</div>
                   <div className="column">Name: {post.frontmatter.title}</div>
                   <div className="column">Bags: 1000</div>
-                  <div className="column">
-                    <Link className="button is-small is-pulled-right" to={post.frontmatter.path}>
+                  <div className="column is-clearfix">
+                    <Link className="button is-small is-primary is-pulled-right" to={post.frontmatter.path}>
                       Order Info →
                     </Link>
                   </div>
