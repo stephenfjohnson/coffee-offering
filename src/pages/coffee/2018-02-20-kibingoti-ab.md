@@ -3,9 +3,9 @@ templateKey: coffee-page
 path: Kenya
 title: Kibingoti AB
 date: 2018-02-21T01:10:01.691Z
-description: 'Sweet apple, lemon, cranberry, light body.'
+description: 'Sweet apple, lemon, cranberry, light body'
 bags: '20'
-origin: Kenyaaaaaa
+origin: Kenya
 ---
 The Kibingoti AB coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Kibingoti wet mill which sources coffee from dozens of nano-farmers in the surrounding vicinity who's offering is exported by the coop.
 
