@@ -60,9 +60,9 @@ export default class IndexPage extends React.Component {
             {posts.filter(post => post.node.frontmatter.templateKey === 'coffee-page').map(({ node: post }) => (
               <div className="content" style={{ border: '1px solid #eaecee', padding: '1.5em 2em' }} key={post.id}>
                 <div className="columns" key={post.id}>
-                  <div className="column">Origin: Kenya</div>
+                  <div className="column">Origin: {post.frontmatter.origin}</div>
                   <div className="column">Name: {post.frontmatter.title}</div>
-                  <div className="column">Bags: 1000</div>
+                  <div className="column">Bags: {post.frontmatter.bags}</div>
                   <div className="column is-clearfix">
                     <Link className="button is-small is-primary is-pulled-right" to={post.frontmatter.path}>
                       Order Info →
@@ -184,6 +184,8 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             path
+            bags
+            origin
           }
         }
       }
