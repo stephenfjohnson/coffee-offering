@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Link from 'gatsby-link';
 import Script from 'react-load-script';
 import graphql from 'graphql';
@@ -45,90 +45,129 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <section className="section">
-        <Script url="https://identity.netlify.com/v1/netlify-identity-widget.js" onLoad={() => this.handleScriptLoad()} />
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Coffee Offering</h1>
+      <Fragment>
+        <section className="hero is-medium is-dark is-dark">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">Coffee Offering</h1>
+              <h2 className="subtitle">Some random text</h2>
+            </div>
           </div>
-          <h2 className="has-text-weight-bold is-size-4">Coffee</h2>
-          {posts.filter(post => post.node.frontmatter.templateKey === 'coffee-page').map(({ node: post }) => (
-            <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
-              <div class="columns">
-                <div class="column">Origin: Kenya</div>
-                <div class="column">Name: {post.frontmatter.title}</div>
-                <div class="column">Bags: 1000</div>
-                <div class="column">
-                  <Link className="button is-small is-pulled-right" to={post.frontmatter.path}>
-                    Order Info →
-                  </Link>
+        </section>
+        <section className="section">
+          <Script url="https://identity.netlify.com/v1/netlify-identity-widget.js" onLoad={() => this.handleScriptLoad()} />
+          <div className="container">
+            {posts.filter(post => post.node.frontmatter.templateKey === 'coffee-page').map(({ node: post }) => (
+              <div className="content" style={{ border: '1px solid #eaecee', padding: '1.5em 2em' }} key={post.id}>
+                <div className="columns" key={post.id}>
+                  <div className="column">Origin: Kenya</div>
+                  <div className="column">Name: {post.frontmatter.title}</div>
+                  <div className="column">Bags: 1000</div>
+                  <div className="column">
+                    <Link className="button is-small is-pulled-right" to={post.frontmatter.path}>
+                      Order Info →
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-          {/* <h2 className="has-text-weight-bold is-size-4">Latest Stories</h2>
-          {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => (
-            <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
-              <p>
-                <Link className="has-text-primary" to={post.frontmatter.path}>
-                  {post.frontmatter.title}
-                </Link>
-                <span> &bull; </span>
-                <small>{post.frontmatter.date}</small>
-              </p>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button is-small" to={post.frontmatter.path}>
-                  Keep Reading →
-                </Link>
-              </p>
-            </div>
-          ))} */}
-        </div>
-        <div className="container">
-          <div className="content">
-            <form name="contact" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
-              <div className="field">
-                <label className="label">Name</label>
-                <div className="control">
-                  <input className="input" type="text" name="name" placeholder="Text input" onChange={this.handleChange} />
+            ))}
+          </div>
+          <div className="container">
+            <div className="content">
+              <h2 className="has-text-weight-bold is-size-4">Contact</h2>
+              <form name="contact" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
+                <p hidden>
+                  <label>
+                    Don’t fill this out: <input name="bot-field" />
+                  </label>
+                </p>
+                <div className="field">
+                  <div className="columns">
+                    <div className="column">
+                      <label className="label">First Name</label>
+                      <div className="control has-icons-left has-icons-right">
+                        <input className="input" type="text" name="name" placeholder="Enter Your First Name" onChange={this.handleChange} />
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-envelope" />
+                        </span>
+                      </div>
+                    </div>
+                    <div className="column">
+                      <label className="label">Last Name</label>
+                      <div className="control has-icons-left has-icons-right">
+                        <input className="input" type="text" name="name" placeholder="Enter Your Last Name" onChange={this.handleChange} />
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-envelope" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div className="field">
-                <label className="label">Email</label>
-                <div className="control has-icons-left has-icons-right">
-                  <input className="input is-danger" type="email" name="email" placeholder="Email input" onChange={this.handleChange} />
-                  <span className="icon is-small is-left">
-                    <i className="fas fa-envelope" />
-                  </span>
-                  <span className="icon is-small is-right">
+                <div className="field">
+                  <div className="columns">
+                    <div className="column">
+                      <label className="label">Email</label>
+                      <div className="control has-icons-left has-icons-right">
+                        <input className="input" type="email" name="email" placeholder="Enter Your Email" onChange={this.handleChange} />
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-envelope" />
+                        </span>
+                        {/* <span className="icon is-small is-right">
                     <i className="fas fa-exclamation-triangle" />
-                  </span>
+                  </span> */}
+                      </div>
+                      {/* <p className="help is-danger">This email is invalid</p> */}
+                    </div>
+                    <div className="column">
+                      <label className="label">Phone</label>
+                      <div className="control has-icons-left has-icons-right">
+                        <input className="input" type="text" name="phone" placeholder="Enter Your Phone Number" onChange={this.handleChange} />
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-envelope" />
+                        </span>
+                        {/* <span className="icon is-small is-right">
+                    <i className="fas fa-exclamation-triangle" />
+                  </span> */}
+                      </div>
+                      {/* <p className="help is-danger">This email is invalid</p> */}
+                    </div>
+                    <div className="column">
+                      <label className="label">Subject</label>
+                      <div className="control">
+                        <div className="select">
+                          <select>
+                            <option>I'm Interested In</option>
+                            <option>Ordering some great coffee</option>
+                            <option>Listing my coffee on this website</option>
+                            <option>Media connection</option>
+                            <option>Other inquiry</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p className="help is-danger">This email is invalid</p>
-              </div>
 
-              <div className="field">
-                <label className="label">Message</label>
-                <div className="control">
-                  <textarea className="textarea" name="message" placeholder="Textarea" onChange={this.handleChange} />
+                <div className="field">
+                  <label className="label">Message</label>
+                  <div className="control">
+                    <textarea className="textarea" name="message" placeholder="How can we help?" onChange={this.handleChange} />
+                  </div>
                 </div>
-              </div>
 
-              <div className="field is-grouped">
-                <div className="control">
-                  <button className="button is-link" type="submit">
-                    Submit
-                  </button>
+                <div className="field is-grouped">
+                  <div className="control">
+                    <button className="button is-link" type="submit">
+                      Submit
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Fragment>
     );
   }
 }
