@@ -1,7 +1,7 @@
 ---
 templateKey: coffee-page
-path: Nguguini AA
-title: Kenya
+path: nguguini-aa
+title: Nguguini AA
 date: 2018-02-21T01:09:18.167Z
 description: 'Sweet pineapple, fig, fresh coconut, vanilla, pinot noir, medium body.'
 bags: '20'
