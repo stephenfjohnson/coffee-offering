@@ -2,9 +2,9 @@
 templateKey: coffee-page
 path: Kenya
 title: Kianjege AA
-date: 2018-02-21T01:31:59.000Z
-description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body'
-bags: '22'
+date: 2018-02-21T00:00:00-08:00
+description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
+bags: '20'
 origin: Kenya
 ---
 ‘Kianjege’ is a Kikuyu word meaning Porcupine. Southwest of Mt. Kenya, this area is famous for arrow-root and the native porcupines who consume it. 
