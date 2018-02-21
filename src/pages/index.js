@@ -54,24 +54,19 @@ export default class IndexPage extends React.Component {
           <h2 className="has-text-weight-bold is-size-4">Coffee</h2>
           {posts.filter(post => post.node.frontmatter.templateKey === 'coffee-page').map(({ node: post }) => (
             <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
-              <p>
-                <Link className="has-text-primary" to={post.frontmatter.path}>
-                  {post.frontmatter.title}
-                </Link>
-                <span> &bull; </span>
-                <small>{post.frontmatter.date}</small>
-              </p>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button is-small" to={post.frontmatter.path}>
-                  Keep Reading →
-                </Link>
-              </p>
+              <div class="columns">
+                <div class="column">Origin: Kenya</div>
+                <div class="column">Name: {post.frontmatter.title}</div>
+                <div class="column">Bags: 1000</div>
+                <div class="column">
+                  <Link className="button is-small is-pulled-right" to={post.frontmatter.path}>
+                    Order Info →
+                  </Link>
+                </div>
+              </div>
             </div>
           ))}
-          <h2 className="has-text-weight-bold is-size-4">Latest Stories</h2>
+          {/* <h2 className="has-text-weight-bold is-size-4">Latest Stories</h2>
           {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => (
             <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
               <p>
@@ -90,7 +85,7 @@ export default class IndexPage extends React.Component {
                 </Link>
               </p>
             </div>
-          ))}
+          ))} */}
         </div>
         <div className="container">
           <div className="content">
