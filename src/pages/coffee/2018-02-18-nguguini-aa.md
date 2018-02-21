@@ -1,7 +1,7 @@
 ---
 templateKey: coffee-page
-path: Kianjege AA
-title: Kenya
+path: kianjeg-aa
+title: Kianjege AA
 date: 2018-02-21T08:00:00.000Z
 description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
 bags: '20'
