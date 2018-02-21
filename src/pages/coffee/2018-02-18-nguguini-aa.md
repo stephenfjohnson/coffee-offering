@@ -1,6 +1,6 @@
 ---
 templateKey: coffee-page
-path: kianjeg-aa
+path: kianjege-aa
 title: Kianjege AA
 date: 2018-02-21T08:00:00.000Z
 description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
