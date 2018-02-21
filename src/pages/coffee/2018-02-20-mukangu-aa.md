@@ -2,9 +2,9 @@
 templateKey: coffee-page
 path: Kenya Kirinyaga
 title: Mukangu AA
-date: 2018-02-21T01:04:49.007Z
+date: 2018-02-21T00:00:00-08:00
 description: 'Dark chocolate, cinnamon, blackberry, vermouth, lime, firm body.'
-bags: '2455'
+bags: '18'
 origin: Kenya
 ---
 The Mukangu AA coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Mukangu wet mill which sources coffee from dozens of nano-farmers in the surrounding vicinity who's offering is exported by the coop.
