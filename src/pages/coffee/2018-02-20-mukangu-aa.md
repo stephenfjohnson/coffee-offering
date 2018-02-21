@@ -1,8 +1,8 @@
 ---
 templateKey: coffee-page
-path: Kenya
-title: Mukangu AA
-date: 2018-02-21T00:00:00-08:00
+path: Mukangu AA
+title: Kenya
+date: 2018-02-21T08:00:00.000Z
 description: 'Dark chocolate, cinnamon, blackberry, vermouth, lime, firm body.'
 bags: '20'
 origin: Kenya
