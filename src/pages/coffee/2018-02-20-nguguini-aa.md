@@ -11,6 +11,4 @@ The Nguguini AA coffee was personally sourced and directly imported from the Kib
 
 This coffee is hand picked from fertile volcanic soil at 1600m before undergoing a full-washed process. The importer hopes to be part of encouraging local organic initiatives. For now it is an example of some of the best bourbon SL-28 and SL-34 lots coming from this region!
 
-\[ORDER THIS TASTY GREEN]
-
-^link to order form
+order/contact form at bottom
