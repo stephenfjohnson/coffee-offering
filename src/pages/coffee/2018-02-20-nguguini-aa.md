@@ -1,11 +1,17 @@
 ---
 templateKey: coffee-page
+date: 2018-02-21T01:09:18.167Z
 path: nguguini-aa
 title: Nguguini AA
-date: 2018-02-21T01:09:18.167Z
-description: 'Sweet pineapple, fig, fresh coconut, vanilla, pinot noir, medium body.'
-bags: '20'
+offeringBy: LYP Ltd
 origin: Kenya
+status: SPOT
+house: Spokane
+bags: '20'
+harvest: 2017-01-31T00:00:00-08:00
+elevation: '1600'
+process: Full Wash
+description: 'Sweet pineapple, fig, fresh coconut, vanilla, pinot noir, medium body.'
 ---
 The Nguguini AA coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Nguguini wet mill which sources coffee from dozens of nano-farmers in the surrounding vicinity who's offering is exported by the coop.
 
