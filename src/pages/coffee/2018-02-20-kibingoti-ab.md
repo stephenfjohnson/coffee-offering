@@ -6,9 +6,9 @@ title: Kibingoti AB
 offeringBy: LYP Ltd
 origin: Kenya
 status: SPOT
-house: Spokane
+house: 'Spokane, Portland'
 bags: '20'
-harvest: 2017-01-31T00:00:00-08:00
+harvest: 2017-01-31T08:00:00.000Z
 elevation: '1600'
 process: Full Wash
 description: 'Sweet apple, lemon, cranberry, light body'
