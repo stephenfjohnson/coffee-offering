@@ -6,8 +6,15 @@ date: 2018-02-21T08:00:00.000Z
 description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
 bags: '20'
 origin: Kenya
+offeringBy: Kenya
+status: Kenya
+house: Kenya
+harvest: 2018-02-21T08:00:00.000Z
+process: Kenya
+elevation: '100'
 ---
-‘Kianjege’ is a Kikuyu word meaning Porcupine. Southwest of Mt. Kenya, this area is famous for arrow-root and the native porcupines who consume it. 
+
+‘Kianjege’ is a Kikuyu word meaning Porcupine. Southwest of Mt. Kenya, this area is famous for arrow-root and the native porcupines who consume it.
 
 Nearby are beautiful valleys in the Kirinyaga District dotted with small farms growing coffee and tea. This coffee is named after the local Kianjege mill which processes coffee from dozens of nano farmers. The coffee is then directly traded to by the Kibirigwi co-op.
 

@@ -18,8 +18,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               image
               heading
-              description
+              offeringBy
+              origin
+              status
+              house
               bags
+              harvest
+              elevation
+              process
+              description
               intro {
                 blurbs {
                   image
@@ -74,11 +81,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       const pagePath = node.frontmatter.path;
       createPage({
         path: pagePath,
-        component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
-        // additional data can be passed via context
-        context: {
-          path: pagePath
-        }
+        component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`), // additional data can be passed via context
+        context: { path: pagePath }
       });
     });
   });

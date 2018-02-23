@@ -26,12 +26,18 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coffee-page"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Offering By", name: "offeringBy", widget: "string"}
+      - {label: "Origin", name: "origin", widget: "string"}
+      - {label: "Status", name: "status", widget: "string"}
+      - {label: "House", name: "house", widget: "string"}
       - {label: "Bags", name: "bags", widget: "number"}
-      - {label: "Origin", name: "origin", widget: "text"}
+      - {label: "Harvest", name: "harvest", widget: "datetime"}
+      - {label: "Elevation in Meters", name: "elevation", widget: "number"}
+      - {label: "Process", name: "process", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "pages"
