@@ -14,13 +14,36 @@ export const CoffeePostTemplate = ({ content, contentComponent, title, offeringB
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">Offering Data: {title}</h1>
             <h2 className="title is-size-3">Offering by: {offeringBy}</h2>
-            <p>Origin: {origin}</p>
-            <p>Status: {status}</p>
-            <p>House: {house}</p>
-            <p>Bags: {bags}</p>
-            <p>Harvest: {harvest}</p>
-            <p>Elevation: {elevation}m</p>
-            <p>Process: {process}</p>
+            <div className="columns">
+              <div className="column">
+                <span className="is-size-2">
+                  <i class="far fa-map" />
+                </span>
+                <p> Origin: {origin}</p>
+              </div>
+              <div className="column">
+                <p>🚛 Status: {status}</p>
+              </div>
+              <div className="column">
+                <p>🏠 House: {house}</p>
+              </div>
+              <div className="column">
+                <p>👝 Bags: {bags}</p>
+              </div>
+            </div>
+            <div className="columns">
+              <div className="column">
+                <p>🍒 Harvest: {harvest}</p>
+              </div>
+              <div className="column">
+                <p>⛰ Elevation: {elevation}m</p>
+              </div>
+              <div className="column">
+                <p>⚙️ Process: {process}</p>
+              </div>
+              <div className="column" />
+            </div>
+
             <h2 className="title is-size-3">Cup Profile</h2>
             <p>{description}</p>
             <h2 className="title is-size-3">Story</h2>

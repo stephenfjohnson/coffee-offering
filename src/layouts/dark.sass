@@ -1,0 +1,7805 @@
+/*! bulmaswatch v0.6.1 | MIT License
+/*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic)
+
+@-webkit-keyframes spinAround
+  0%
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  to
+    -webkit-transform: rotate(359deg)
+    transform: rotate(359deg)
+
+
+@keyframes spinAround
+  0%
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  to
+    -webkit-transform: rotate(359deg)
+    transform: rotate(359deg)
+
+
+/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css
+
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul
+  padding: 0
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  font-size: 100%
+  font-weight: 400
+
+ul
+  list-style: none
+
+button, input, select
+  margin: 0
+
+html
+  box-sizing: border-box
+  background-color: #1f2424
+  font-size: 15px
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  min-width: 300px
+  overflow-x: hidden
+  overflow-y: scroll
+  text-rendering: optimizeLegibility
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
+
+*, :after, :before
+  box-sizing: inherit
+
+audio, embed, img, object, video
+  max-width: 100%
+
+iframe
+  border: 0
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td, th
+  padding: 0
+  text-align: left
+
+article, aside, figure, footer, header, hgroup, hr, section
+  display: block
+
+body, button, input, select, textarea
+  font-family: "Lato",-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue","Helvetica","Arial",sans-serif
+
+code, pre
+  -moz-osx-font-smoothing: auto
+  -webkit-font-smoothing: auto
+  font-family: "Inconsolata","Consolas","Monaco",monospace
+
+body, code
+  font-weight: 400
+
+body
+  font-size: 1rem
+  line-height: 1.5
+  color: #fff
+
+a
+  color: #1abc9c
+  cursor: pointer
+  text-decoration: none
+  transition: all 200ms ease
+  strong
+    color: currentColor
+
+pre code
+  color: currentColor
+
+a:hover
+  color: #1dd2af
+
+code, pre
+  background-color: #282f2f
+
+code
+  padding: .25em .5em
+  color: #e74c3c
+
+hr
+  background-color: #5e6d6f
+  border: 0
+  margin: 1.5rem 0
+  height: 2px
+
+img
+  height: auto
+
+input
+  &[type=checkbox], &[type=radio]
+    vertical-align: baseline
+
+code, pre, small
+  font-size: .875em
+
+span
+  font-style: inherit
+  font-weight: inherit
+
+strong
+  font-weight: 700
+
+pre
+  -webkit-overflow-scrolling: touch
+  color: #fff
+  overflow-x: auto
+  padding: 1.25rem 1.5rem
+  white-space: pre
+  word-wrap: normal
+  code
+    background-color: transparent
+    font-size: 1em
+    padding: 0
+
+table
+  td, th
+    text-align: left
+    vertical-align: top
+
+strong, table th
+  color: #f2f2f2
+
+.is-clearfix:after
+  clear: both
+  content: " "
+  display: table
+
+.is-pulled-left
+  float: left !important
+
+.is-pulled-right
+  float: right !important
+
+.is-clipped
+  overflow: hidden !important
+
+.is-overlay
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+
+.is-size-1
+  font-size: 3rem !important
+
+.is-size-2
+  font-size: 2.5rem !important
+
+.is-size-3
+  font-size: 2rem !important
+
+.is-size-4
+  font-size: 1.5rem !important
+
+.is-size-5
+  font-size: 1.25rem !important
+
+.is-size-6
+  font-size: 15px !important
+
+.is-size-7
+  font-size: 0.85em !important
+
+@media screen and (max-width: 768px)
+  .is-size-1-mobile
+    font-size: 3rem !important
+  .is-size-2-mobile
+    font-size: 2.5rem !important
+  .is-size-3-mobile
+    font-size: 2rem !important
+  .is-size-4-mobile
+    font-size: 1.5rem !important
+  .is-size-5-mobile
+    font-size: 1.25rem !important
+  .is-size-6-mobile
+    font-size: 15px !important
+  .is-size-7-mobile
+    font-size: 0.85em !important
+
+@media screen and (min-width: 769px), print
+  .is-size-1-tablet
+    font-size: 3rem !important
+  .is-size-2-tablet
+    font-size: 2.5rem !important
+  .is-size-3-tablet
+    font-size: 2rem !important
+  .is-size-4-tablet
+    font-size: 1.5rem !important
+  .is-size-5-tablet
+    font-size: 1.25rem !important
+  .is-size-6-tablet
+    font-size: 15px !important
+  .is-size-7-tablet
+    font-size: 0.85em !important
+
+@media screen and (max-width: 1023px)
+  .is-size-1-touch
+    font-size: 3rem !important
+  .is-size-2-touch
+    font-size: 2.5rem !important
+  .is-size-3-touch
+    font-size: 2rem !important
+  .is-size-4-touch
+    font-size: 1.5rem !important
+  .is-size-5-touch
+    font-size: 1.25rem !important
+  .is-size-6-touch
+    font-size: 15px !important
+  .is-size-7-touch
+    font-size: 0.85em !important
+
+@media screen and (min-width: 1024px)
+  .is-size-1-desktop
+    font-size: 3rem !important
+  .is-size-2-desktop
+    font-size: 2.5rem !important
+  .is-size-3-desktop
+    font-size: 2rem !important
+  .is-size-4-desktop
+    font-size: 1.5rem !important
+  .is-size-5-desktop
+    font-size: 1.25rem !important
+  .is-size-6-desktop
+    font-size: 15px !important
+  .is-size-7-desktop
+    font-size: 0.85em !important
+
+@media screen and (min-width: 1216px)
+  .is-size-1-widescreen
+    font-size: 3rem !important
+  .is-size-2-widescreen
+    font-size: 2.5rem !important
+  .is-size-3-widescreen
+    font-size: 2rem !important
+  .is-size-4-widescreen
+    font-size: 1.5rem !important
+  .is-size-5-widescreen
+    font-size: 1.25rem !important
+  .is-size-6-widescreen
+    font-size: 15px !important
+  .is-size-7-widescreen
+    font-size: 0.85em !important
+
+@media screen and (min-width: 1408px)
+  .is-size-1-fullhd
+    font-size: 3rem !important
+  .is-size-2-fullhd
+    font-size: 2.5rem !important
+  .is-size-3-fullhd
+    font-size: 2rem !important
+  .is-size-4-fullhd
+    font-size: 1.5rem !important
+  .is-size-5-fullhd
+    font-size: 1.25rem !important
+  .is-size-6-fullhd
+    font-size: 15px !important
+  .is-size-7-fullhd
+    font-size: 0.85em !important
+
+.has-text-centered
+  text-align: center !important
+
+@media screen and (max-width: 768px)
+  .has-text-centered-mobile
+    text-align: center !important
+
+@media screen and (min-width: 769px), print
+  .has-text-centered-tablet
+    text-align: center !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .has-text-centered-tablet-only
+    text-align: center !important
+
+@media screen and (max-width: 1023px)
+  .has-text-centered-touch
+    text-align: center !important
+
+@media screen and (min-width: 1024px)
+  .has-text-centered-desktop
+    text-align: center !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .has-text-centered-desktop-only
+    text-align: center !important
+
+@media screen and (min-width: 1216px)
+  .has-text-centered-widescreen
+    text-align: center !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .has-text-centered-widescreen-only
+    text-align: center !important
+
+@media screen and (min-width: 1408px)
+  .has-text-centered-fullhd
+    text-align: center !important
+
+.has-text-justified
+  text-align: justify !important
+
+@media screen and (max-width: 768px)
+  .has-text-justified-mobile
+    text-align: justify !important
+
+@media screen and (min-width: 769px), print
+  .has-text-justified-tablet
+    text-align: justify !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .has-text-justified-tablet-only
+    text-align: justify !important
+
+@media screen and (max-width: 1023px)
+  .has-text-justified-touch
+    text-align: justify !important
+
+@media screen and (min-width: 1024px)
+  .has-text-justified-desktop
+    text-align: justify !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .has-text-justified-desktop-only
+    text-align: justify !important
+
+@media screen and (min-width: 1216px)
+  .has-text-justified-widescreen
+    text-align: justify !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .has-text-justified-widescreen-only
+    text-align: justify !important
+
+@media screen and (min-width: 1408px)
+  .has-text-justified-fullhd
+    text-align: justify !important
+
+.has-text-left
+  text-align: left !important
+
+@media screen and (max-width: 768px)
+  .has-text-left-mobile
+    text-align: left !important
+
+@media screen and (min-width: 769px), print
+  .has-text-left-tablet
+    text-align: left !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .has-text-left-tablet-only
+    text-align: left !important
+
+@media screen and (max-width: 1023px)
+  .has-text-left-touch
+    text-align: left !important
+
+@media screen and (min-width: 1024px)
+  .has-text-left-desktop
+    text-align: left !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .has-text-left-desktop-only
+    text-align: left !important
+
+@media screen and (min-width: 1216px)
+  .has-text-left-widescreen
+    text-align: left !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .has-text-left-widescreen-only
+    text-align: left !important
+
+@media screen and (min-width: 1408px)
+  .has-text-left-fullhd
+    text-align: left !important
+
+.has-text-right
+  text-align: right !important
+
+@media screen and (max-width: 768px)
+  .has-text-right-mobile
+    text-align: right !important
+
+@media screen and (min-width: 769px), print
+  .has-text-right-tablet
+    text-align: right !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .has-text-right-tablet-only
+    text-align: right !important
+
+@media screen and (max-width: 1023px)
+  .has-text-right-touch
+    text-align: right !important
+
+@media screen and (min-width: 1024px)
+  .has-text-right-desktop
+    text-align: right !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .has-text-right-desktop-only
+    text-align: right !important
+
+@media screen and (min-width: 1216px)
+  .has-text-right-widescreen
+    text-align: right !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .has-text-right-widescreen-only
+    text-align: right !important
+
+@media screen and (min-width: 1408px)
+  .has-text-right-fullhd
+    text-align: right !important
+
+.is-capitalized
+  text-transform: capitalize !important
+
+.is-lowercase
+  text-transform: lowercase !important
+
+.is-uppercase
+  text-transform: uppercase !important
+
+.has-text-white
+  color: #fff !important
+
+a.has-text-white
+  &:focus, &:hover
+    color: #e6e6e6 !important
+
+.has-text-black
+  color: #0a0a0a !important
+
+a.has-text-black
+  &:focus, &:hover
+    color: #000 !important
+
+.has-text-light
+  color: #ecf0f1 !important
+
+a.has-text-light
+  &:focus, &:hover
+    color: #cfd9db !important
+
+.has-text-dark
+  color: #282f2f !important
+
+a.has-text-dark
+  &:focus, &:hover
+    color: #111414 !important
+
+.has-text-primary
+  color: #375a7f !important
+
+a.has-text-primary
+  &:focus, &:hover
+    color: #28415b !important
+
+.has-text-link
+  color: #1abc9c !important
+
+a.has-text-link
+  &:focus, &:hover
+    color: #148f77 !important
+
+.has-text-info
+  color: #209cee !important
+
+a.has-text-info
+  &:focus, &:hover
+    color: #0f81cc !important
+
+.has-text-success
+  color: #2ecc71 !important
+
+a.has-text-success
+  &:focus, &:hover
+    color: #25a25a !important
+
+.has-text-warning
+  color: #f1b70e !important
+
+a.has-text-warning
+  &:focus, &:hover
+    color: #c1920b !important
+
+.has-text-danger
+  color: #e74c3c !important
+
+a.has-text-danger
+  &:focus, &:hover
+    color: #d62c1a !important
+
+.has-text-black-bis
+  color: #121212 !important
+
+.has-text-black-ter
+  color: #242424 !important
+
+.has-text-grey-darker
+  color: #282f2f !important
+
+.has-text-grey-dark
+  color: #343c3d !important
+
+.has-text-grey
+  color: #5e6d6f !important
+
+.has-text-grey-light
+  color: #8c9b9d !important
+
+.has-text-grey-lighter
+  color: #dbdee0 !important
+
+.has-text-white-ter
+  color: #ecf0f1 !important
+
+.has-text-white-bis
+  color: #fafafa !important
+
+.has-text-weight-light
+  font-weight: 300 !important
+
+.has-text-weight-normal
+  font-weight: 400 !important
+
+.has-text-weight-semibold
+  font-weight: 600 !important
+
+.has-text-weight-bold
+  font-weight: 700 !important
+
+.is-block
+  display: block !important
+
+@media screen and (max-width: 768px)
+  .is-block-mobile
+    display: block !important
+
+@media screen and (min-width: 769px), print
+  .is-block-tablet
+    display: block !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-block-tablet-only
+    display: block !important
+
+@media screen and (max-width: 1023px)
+  .is-block-touch
+    display: block !important
+
+@media screen and (min-width: 1024px)
+  .is-block-desktop
+    display: block !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-block-desktop-only
+    display: block !important
+
+@media screen and (min-width: 1216px)
+  .is-block-widescreen
+    display: block !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-block-widescreen-only
+    display: block !important
+
+@media screen and (min-width: 1408px)
+  .is-block-fullhd
+    display: block !important
+
+.is-flex
+  display: -webkit-box !important
+  display: -ms-flexbox !important
+  display: flex !important
+
+@media screen and (max-width: 768px)
+  .is-flex-mobile
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 769px), print
+  .is-flex-tablet
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-flex-tablet-only
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (max-width: 1023px)
+  .is-flex-touch
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 1024px)
+  .is-flex-desktop
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-flex-desktop-only
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 1216px)
+  .is-flex-widescreen
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-flex-widescreen-only
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+@media screen and (min-width: 1408px)
+  .is-flex-fullhd
+    display: -webkit-box !important
+    display: -ms-flexbox !important
+    display: flex !important
+
+.is-inline
+  display: inline !important
+
+@media screen and (max-width: 768px)
+  .is-inline-mobile
+    display: inline !important
+
+@media screen and (min-width: 769px), print
+  .is-inline-tablet
+    display: inline !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-inline-tablet-only
+    display: inline !important
+
+@media screen and (max-width: 1023px)
+  .is-inline-touch
+    display: inline !important
+
+@media screen and (min-width: 1024px)
+  .is-inline-desktop
+    display: inline !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-inline-desktop-only
+    display: inline !important
+
+@media screen and (min-width: 1216px)
+  .is-inline-widescreen
+    display: inline !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-inline-widescreen-only
+    display: inline !important
+
+@media screen and (min-width: 1408px)
+  .is-inline-fullhd
+    display: inline !important
+
+.is-inline-block
+  display: inline-block !important
+
+@media screen and (max-width: 768px)
+  .is-inline-block-mobile
+    display: inline-block !important
+
+@media screen and (min-width: 769px), print
+  .is-inline-block-tablet
+    display: inline-block !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-inline-block-tablet-only
+    display: inline-block !important
+
+@media screen and (max-width: 1023px)
+  .is-inline-block-touch
+    display: inline-block !important
+
+@media screen and (min-width: 1024px)
+  .is-inline-block-desktop
+    display: inline-block !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-inline-block-desktop-only
+    display: inline-block !important
+
+@media screen and (min-width: 1216px)
+  .is-inline-block-widescreen
+    display: inline-block !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-inline-block-widescreen-only
+    display: inline-block !important
+
+@media screen and (min-width: 1408px)
+  .is-inline-block-fullhd
+    display: inline-block !important
+
+.is-inline-flex
+  display: -webkit-inline-box !important
+  display: -ms-inline-flexbox !important
+  display: inline-flex !important
+
+@media screen and (max-width: 768px)
+  .is-inline-flex-mobile
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 769px), print
+  .is-inline-flex-tablet
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-inline-flex-tablet-only
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (max-width: 1023px)
+  .is-inline-flex-touch
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 1024px)
+  .is-inline-flex-desktop
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-inline-flex-desktop-only
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 1216px)
+  .is-inline-flex-widescreen
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-inline-flex-widescreen-only
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+@media screen and (min-width: 1408px)
+  .is-inline-flex-fullhd
+    display: -webkit-inline-box !important
+    display: -ms-inline-flexbox !important
+    display: inline-flex !important
+
+.is-hidden
+  display: none !important
+
+@media screen and (max-width: 768px)
+  .is-hidden-mobile
+    display: none !important
+
+@media screen and (min-width: 769px), print
+  .is-hidden-tablet
+    display: none !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-hidden-tablet-only
+    display: none !important
+
+@media screen and (max-width: 1023px)
+  .is-hidden-touch
+    display: none !important
+
+@media screen and (min-width: 1024px)
+  .is-hidden-desktop
+    display: none !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-hidden-desktop-only
+    display: none !important
+
+@media screen and (min-width: 1216px)
+  .is-hidden-widescreen
+    display: none !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-hidden-widescreen-only
+    display: none !important
+
+@media screen and (min-width: 1408px)
+  .is-hidden-fullhd
+    display: none !important
+
+.is-invisible
+  visibility: hidden !important
+
+@media screen and (max-width: 768px)
+  .is-invisible-mobile
+    visibility: hidden !important
+
+@media screen and (min-width: 769px), print
+  .is-invisible-tablet
+    visibility: hidden !important
+
+@media screen and (min-width: 769px) and (max-width: 1023px)
+  .is-invisible-tablet-only
+    visibility: hidden !important
+
+@media screen and (max-width: 1023px)
+  .is-invisible-touch
+    visibility: hidden !important
+
+@media screen and (min-width: 1024px)
+  .is-invisible-desktop
+    visibility: hidden !important
+
+@media screen and (min-width: 1024px) and (max-width: 1215px)
+  .is-invisible-desktop-only
+    visibility: hidden !important
+
+@media screen and (min-width: 1216px)
+  .is-invisible-widescreen
+    visibility: hidden !important
+
+@media screen and (min-width: 1216px) and (max-width: 1407px)
+  .is-invisible-widescreen-only
+    visibility: hidden !important
+
+@media screen and (min-width: 1408px)
+  .is-invisible-fullhd
+    visibility: hidden !important
+
+.is-marginless
+  margin: 0 !important
+
+.is-paddingless
+  padding: 0 !important
+
+.is-radiusless
+  border-radius: 0 !important
+
+.is-shadowless
+  box-shadow: none !important
+
+.is-unselectable
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.box
+  border-radius: 8px
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+  color: #fff
+  display: block
+  padding: 1.25rem
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+a.box
+  &:focus, &:hover
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #1abc9c
+  &:active
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #1abc9c
+
+.button
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  border: 1px solid transparent
+  border-radius: .4em
+  box-shadow: none
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  font-size: 15px
+  line-height: 1.5
+  padding: calc(.375em - 1px) calc(.625em - 1px)
+  position: relative
+  vertical-align: top
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-color: #282f2f
+  border-color: #4c5759
+  cursor: pointer
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  padding-left: .75em
+  padding-right: .75em
+  text-align: center
+  white-space: nowrap
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+  &[disabled]
+    cursor: not-allowed
+  strong
+    color: inherit
+  .icon
+    height: 1.5em
+    width: 1.5em
+    &.is-large, &.is-medium, &.is-small
+      height: 1.5em
+      width: 1.5em
+    &:first-child:not(:last-child)
+      margin-left: calc(-.375em - 1px)
+      margin-right: .1875em
+    &:last-child:not(:first-child)
+      margin-left: .1875em
+      margin-right: calc(-.375em - 1px)
+    &:first-child:last-child
+      margin-left: calc(-.375em - 1px)
+      margin-right: calc(-.375em - 1px)
+  &.is-hovered, &:hover
+    border-color: #8c9b9d
+    color: #f2f2f2
+  &.is-focused, &:focus
+    border-color: #8c9b9d
+    color: #17a689
+  &.is-focused:not(:active), &:focus:not(:active)
+    box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+  &.is-active, &:active
+    border-color: #343c3d
+    color: #f2f2f2
+  &.is-text
+    background-color: transparent
+    border-color: transparent
+    color: #fff
+    text-decoration: underline
+    &.is-focused, &.is-hovered, &:focus, &:hover
+      background-color: #282f2f
+      color: #f2f2f2
+    &.is-active, &:active
+      background-color: #1d2122
+      color: #f2f2f2
+    &[disabled]
+      background-color: transparent
+      border-color: transparent
+      box-shadow: none
+  &.is-white
+    background-color: #fff
+    border-color: transparent
+    color: #0a0a0a
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #0a0a0a
+    &.is-focused, &:focus
+      color: #0a0a0a
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25)
+    &.is-active, &:active
+      background-color: #f2f2f2
+      border-color: transparent
+      color: #0a0a0a
+    &[disabled]
+      background-color: #fff
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #0a0a0a
+      color: #fff
+      &:hover
+        background-color: #000
+      &[disabled]
+        background-color: #0a0a0a
+        border-color: transparent
+        box-shadow: none
+        color: #fff
+    &.is-loading:after
+      border-color: transparent transparent #0a0a0a #0a0a0a !important
+    &.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        border-color: #fff
+        color: #0a0a0a
+  &.is-black.is-loading:after
+    border-color: transparent transparent #fff #fff !important
+  &.is-white
+    &.is-outlined
+      &.is-loading:after
+        border-color: transparent transparent #fff #fff !important
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #0a0a0a
+      color: #0a0a0a
+      &:focus, &:hover
+        background-color: #0a0a0a
+        color: #fff
+      &[disabled]
+        background-color: transparent
+        border-color: #0a0a0a
+        box-shadow: none
+        color: #0a0a0a
+  &.is-black
+    background-color: #0a0a0a
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25)
+    &.is-active, &:active
+      background-color: #000
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #0a0a0a
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #0a0a0a
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #0a0a0a
+    &.is-outlined
+      background-color: transparent
+      border-color: #0a0a0a
+      color: #0a0a0a
+      &:focus, &:hover
+        background-color: #0a0a0a
+        border-color: #0a0a0a
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #0a0a0a #0a0a0a !important
+      &[disabled]
+        background-color: transparent
+        border-color: #0a0a0a
+        box-shadow: none
+        color: #0a0a0a
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #0a0a0a
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-light
+    background-color: #ecf0f1
+    border-color: transparent
+    color: #282f2f
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #282f2f
+    &.is-focused, &:focus
+      color: #282f2f
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(236, 240, 241, 0.25)
+    &.is-active, &:active
+      background-color: #dde4e6
+      border-color: transparent
+      color: #282f2f
+    &[disabled]
+      background-color: #ecf0f1
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #282f2f
+      color: #ecf0f1
+      &:hover
+        background-color: #1d2122
+      &[disabled]
+        background-color: #282f2f
+        border-color: transparent
+        box-shadow: none
+        color: #ecf0f1
+    &.is-loading:after
+      border-color: transparent transparent #282f2f #282f2f !important
+    &.is-outlined
+      background-color: transparent
+      border-color: #ecf0f1
+      color: #ecf0f1
+      &:focus, &:hover
+        background-color: #ecf0f1
+        border-color: #ecf0f1
+        color: #282f2f
+  &.is-dark.is-loading:after
+    border-color: transparent transparent #ecf0f1 #ecf0f1 !important
+  &.is-light
+    &.is-outlined
+      &.is-loading:after
+        border-color: transparent transparent #ecf0f1 #ecf0f1 !important
+      &[disabled]
+        background-color: transparent
+        border-color: #ecf0f1
+        box-shadow: none
+        color: #ecf0f1
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #282f2f
+      color: #282f2f
+      &:focus, &:hover
+        background-color: #282f2f
+        color: #ecf0f1
+      &[disabled]
+        background-color: transparent
+        border-color: #282f2f
+        box-shadow: none
+        color: #282f2f
+  &.is-dark
+    background-color: #282f2f
+    border-color: transparent
+    color: #ecf0f1
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #ecf0f1
+    &.is-focused, &:focus
+      color: #ecf0f1
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(40, 47, 47, 0.25)
+    &.is-active, &:active
+      background-color: #1d2122
+      border-color: transparent
+      color: #ecf0f1
+    &[disabled]
+      background-color: #282f2f
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #ecf0f1
+      color: #282f2f
+      &:hover
+        background-color: #dde4e6
+      &[disabled]
+        background-color: #ecf0f1
+        border-color: transparent
+        box-shadow: none
+        color: #282f2f
+    &.is-outlined
+      background-color: transparent
+      border-color: #282f2f
+      color: #282f2f
+      &:focus, &:hover
+        background-color: #282f2f
+        border-color: #282f2f
+        color: #ecf0f1
+      &.is-loading:after
+        border-color: transparent transparent #282f2f #282f2f !important
+      &[disabled]
+        background-color: transparent
+        border-color: #282f2f
+        box-shadow: none
+        color: #282f2f
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #ecf0f1
+      color: #ecf0f1
+      &:focus, &:hover
+        background-color: #ecf0f1
+        color: #282f2f
+      &[disabled]
+        background-color: transparent
+        border-color: #ecf0f1
+        box-shadow: none
+        color: #ecf0f1
+  &.is-primary
+    background-color: #375a7f
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(55, 90, 127, 0.25)
+    &.is-active, &:active
+      background-color: #2f4d6d
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #375a7f
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #375a7f
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #375a7f
+  &.is-danger.is-loading:after, &.is-info.is-loading:after, &.is-link.is-loading:after, &.is-primary.is-loading:after, &.is-success.is-loading:after, &.is-warning.is-loading:after
+    border-color: transparent transparent #fff #fff !important
+  &.is-primary
+    &.is-outlined
+      background-color: transparent
+      border-color: #375a7f
+      color: #375a7f
+      &:focus, &:hover
+        background-color: #375a7f
+        border-color: #375a7f
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #375a7f #375a7f !important
+      &[disabled]
+        background-color: transparent
+        border-color: #375a7f
+        box-shadow: none
+        color: #375a7f
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #375a7f
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-link
+    background-color: #1abc9c
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+    &.is-active, &:active
+      background-color: #17a689
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #1abc9c
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #1abc9c
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #1abc9c
+    &.is-outlined
+      background-color: transparent
+      border-color: #1abc9c
+      color: #1abc9c
+      &:focus, &:hover
+        background-color: #1abc9c
+        border-color: #1abc9c
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #1abc9c #1abc9c !important
+      &[disabled]
+        background-color: transparent
+        border-color: #1abc9c
+        box-shadow: none
+        color: #1abc9c
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #1abc9c
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-info
+    background-color: #209cee
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25)
+    &.is-active, &:active
+      background-color: #118fe4
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #209cee
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #209cee
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #209cee
+    &.is-outlined
+      background-color: transparent
+      border-color: #209cee
+      color: #209cee
+      &:focus, &:hover
+        background-color: #209cee
+        border-color: #209cee
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #209cee #209cee !important
+      &[disabled]
+        background-color: transparent
+        border-color: #209cee
+        box-shadow: none
+        color: #209cee
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #209cee
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-success
+    background-color: #2ecc71
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(46, 204, 113, 0.25)
+    &.is-active, &:active
+      background-color: #29b765
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #2ecc71
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #2ecc71
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #2ecc71
+    &.is-outlined
+      background-color: transparent
+      border-color: #2ecc71
+      color: #2ecc71
+      &:focus, &:hover
+        background-color: #2ecc71
+        border-color: #2ecc71
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #2ecc71 #2ecc71 !important
+      &[disabled]
+        background-color: transparent
+        border-color: #2ecc71
+        box-shadow: none
+        color: #2ecc71
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #2ecc71
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-warning
+    background-color: #f1b70e
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(241, 183, 14, 0.25)
+    &.is-active, &:active
+      background-color: #d9a50d
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #f1b70e
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #f1b70e
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #f1b70e
+    &.is-outlined
+      background-color: transparent
+      border-color: #f1b70e
+      color: #f1b70e
+      &:focus, &:hover
+        background-color: #f1b70e
+        border-color: #f1b70e
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #f1b70e #f1b70e !important
+      &[disabled]
+        background-color: transparent
+        border-color: #f1b70e
+        box-shadow: none
+        color: #f1b70e
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #f1b70e
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-danger
+    background-color: #e74c3c
+    border-color: transparent
+    color: #fff
+    &.is-hovered, &:hover
+      border-color: transparent
+      color: #fff
+    &.is-focused, &:focus
+      color: #fff
+    &.is-focused:not(:active), &:focus:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(231, 76, 60, 0.25)
+    &.is-active, &:active
+      background-color: #e43725
+      border-color: transparent
+      color: #fff
+    &[disabled]
+      background-color: #e74c3c
+      border-color: transparent
+      box-shadow: none
+    &.is-inverted
+      background-color: #fff
+      color: #e74c3c
+      &:hover
+        background-color: #f2f2f2
+      &[disabled]
+        background-color: #fff
+        border-color: transparent
+        box-shadow: none
+        color: #e74c3c
+    &.is-outlined
+      background-color: transparent
+      border-color: #e74c3c
+      color: #e74c3c
+      &:focus, &:hover
+        background-color: #e74c3c
+        border-color: #e74c3c
+        color: #fff
+      &.is-loading:after
+        border-color: transparent transparent #e74c3c #e74c3c !important
+      &[disabled]
+        background-color: transparent
+        border-color: #e74c3c
+        box-shadow: none
+        color: #e74c3c
+    &.is-inverted.is-outlined
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &:focus, &:hover
+        background-color: #fff
+        color: #e74c3c
+      &[disabled]
+        background-color: transparent
+        border-color: #fff
+        box-shadow: none
+        color: #fff
+  &.is-small
+    border-radius: 3px
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+  &[disabled]
+    background-color: #fff
+    border-color: #dbdee0
+    box-shadow: none
+    opacity: .5
+  &.is-fullwidth
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    width: 100%
+  &.is-loading
+    color: transparent !important
+    pointer-events: none
+    &:after
+      -webkit-animation: spinAround 500ms infinite linear
+      animation: spinAround 500ms infinite linear
+      border: 2px solid #5e6d6f
+      border-radius: 290486px
+      border-right-color: transparent
+      border-top-color: transparent
+      content: ""
+      display: block
+      height: 1em
+      width: 1em
+      left: calc(50% - (1em/2))
+      top: calc(50% - (1em/2))
+      position: absolute !important
+  &.is-static
+    background-color: #ecf0f1
+    border-color: #dbdee0
+    color: #5e6d6f
+    box-shadow: none
+    pointer-events: none
+
+.buttons
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  .button
+    margin-bottom: .5rem
+    &:not(:last-child)
+      margin-right: .5rem
+  &:last-child
+    margin-bottom: -.5rem
+  &:not(:last-child)
+    margin-bottom: 1rem
+  &.has-addons .button
+    &:not(:first-child)
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+    &:not(:last-child)
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+      margin-right: -1px
+    &:last-child
+      margin-right: 0
+    &.is-hovered, &:hover
+      z-index: 2
+    &.is-active, &.is-focused, &.is-selected, &:active, &:focus
+      z-index: 3
+    &.is-active:hover, &.is-focused:hover, &.is-selected:hover, &:active:hover, &:focus:hover
+      z-index: 4
+
+.field.has-addons .control
+  .button
+    &.is-active:hover, &.is-focused:hover, &:active:hover, &:focus:hover
+      z-index: 4
+  .input
+    &.is-active:hover, &.is-focused:hover, &:active:hover, &:focus:hover
+      z-index: 4
+  .select select
+    &.is-active:hover, &.is-focused:hover, &:active:hover, &:focus:hover
+      z-index: 4
+
+.buttons
+  &.is-centered
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  &.is-right
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+
+.container
+  margin: 0 auto
+  position: relative
+
+@media screen and (min-width: 1024px)
+  .container
+    max-width: 960px
+    width: 960px
+    &.is-fluid
+      margin-left: 32px
+      margin-right: 32px
+      max-width: none
+      width: auto
+
+@media screen and (max-width: 1215px)
+  .container.is-widescreen
+    max-width: 1152px
+    width: auto
+
+@media screen and (max-width: 1407px)
+  .container.is-fullhd
+    max-width: 1344px
+    width: auto
+
+@media screen and (min-width: 1216px)
+  .container
+    max-width: 1152px
+    width: 1152px
+
+@media screen and (min-width: 1408px)
+  .container
+    max-width: 1344px
+    width: 1344px
+
+.content
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  li + li
+    margin-top: .25em
+  blockquote:not(:last-child), dl:not(:last-child), ol:not(:last-child), p:not(:last-child), pre:not(:last-child), table:not(:last-child), ul:not(:last-child)
+    margin-bottom: 1em
+  h1, h2, h3, h4, h5, h6
+    color: #f2f2f2
+    font-weight: 400
+    line-height: 1.125
+  h1
+    font-size: 2em
+    margin-bottom: .5em
+    &:not(:first-child)
+      margin-top: 1em
+  h2
+    font-size: 1.75em
+    margin-bottom: .5714em
+    &:not(:first-child)
+      margin-top: 1.1428em
+  h3
+    font-size: 1.5em
+    margin-bottom: .6666em
+    &:not(:first-child)
+      margin-top: 1.3333em
+  h4
+    font-size: 1.25em
+    margin-bottom: .8em
+  h5
+    font-size: 1.125em
+    margin-bottom: .8888em
+  h6
+    font-size: 1em
+    margin-bottom: 1em
+  blockquote
+    background-color: #282f2f
+    border-left: 5px solid #5e6d6f
+    padding: 1.25em 1.5em
+  ol
+    list-style: decimal outside
+    margin-top: 1em
+  ul
+    list-style: decimal outside
+    margin-top: 1em
+    list-style: disc outside
+    ul
+      list-style-type: circle
+      margin-top: .5em
+      ul
+        list-style-type: square
+  dd, ol, ul
+    margin-left: 2em
+  figure
+    margin-left: 2em
+    margin-right: 2em
+    text-align: center
+    &:not(:first-child)
+      margin-top: 2em
+    &:not(:last-child)
+      margin-bottom: 2em
+    img
+      display: inline-block
+    figcaption
+      font-style: italic
+  pre
+    -webkit-overflow-scrolling: touch
+    overflow-x: auto
+    padding: 1.25em 1.5em
+    white-space: pre
+    word-wrap: normal
+  sub, sup
+    font-size: 75%
+  table
+    width: 100%
+    td, th
+      border: 1px solid #5e6d6f
+      border-width: 0 0 1px
+      padding: .5em .75em
+      vertical-align: top
+
+.table
+  td, th
+    border: 1px solid #5e6d6f
+    border-width: 0 0 1px
+    padding: .5em .75em
+    vertical-align: top
+
+.content table th, .table th
+  color: #f2f2f2
+  text-align: left
+
+.content table
+  tr:hover
+    background-color: #282f2f
+  thead
+    td, th
+      border-width: 0 0 2px
+      color: #f2f2f2
+
+.table thead
+  td, th
+    border-width: 0 0 2px
+    color: #f2f2f2
+
+.content table tfoot
+  td, th
+    border-width: 2px 0 0
+    color: #f2f2f2
+
+.table tfoot
+  td, th
+    border-width: 2px 0 0
+    color: #f2f2f2
+
+.content table tbody tr:last-child
+  td, th
+    border-bottom-width: 0
+
+.table tbody tr:last-child
+  td, th
+    border-bottom-width: 0
+
+.content.is-small, .select.is-loading.is-small:after
+  font-size: .85em
+
+.content
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+
+.input
+  max-width: 100%
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  border: 1px solid transparent
+  border-radius: .4em
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  font-size: 15px
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  line-height: 1.5
+  padding: calc(.375em - 1px) calc(.625em - 1px)
+  position: relative
+  vertical-align: top
+  background-color: #fff
+  border-color: #dbdee0
+  color: #282f2f
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1)
+  width: 100%
+
+.textarea
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  border: 1px solid transparent
+  border-radius: .4em
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  font-size: 15px
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  line-height: 1.5
+  padding: calc(.375em - 1px) calc(.625em - 1px)
+  position: relative
+  vertical-align: top
+  background-color: #fff
+  border-color: #dbdee0
+  color: #282f2f
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1)
+  width: 100%
+
+.input
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.select select
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.textarea
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.input[disabled], .select select[disabled], .textarea[disabled]
+  cursor: not-allowed
+
+.input
+  &:-moz-placeholder, &::-moz-placeholder
+    color: rgba(40, 47, 47, 0.3)
+
+.select select
+  &:-moz-placeholder, &::-moz-placeholder
+    color: rgba(40, 47, 47, 0.3)
+
+.textarea
+  &:-moz-placeholder, &::-moz-placeholder
+    color: rgba(40, 47, 47, 0.3)
+
+.input::-webkit-input-placeholder, .select select::-webkit-input-placeholder, .textarea::-webkit-input-placeholder, .input:-ms-input-placeholder, .select select:-ms-input-placeholder, .textarea:-ms-input-placeholder
+  color: rgba(40, 47, 47, 0.3)
+
+.input
+  &.is-hovered, &:hover
+    border-color: #8c9b9d
+
+.select select
+  &.is-hovered, &:hover
+    border-color: #8c9b9d
+
+.textarea
+  &.is-hovered, &:hover
+    border-color: #8c9b9d
+
+.input
+  &.is-active, &.is-focused, &:active, &:focus
+    border-color: #1abc9c
+    box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+
+.select select
+  &.is-active, &.is-focused, &:active, &:focus
+    border-color: #1abc9c
+    box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+
+.textarea
+  &.is-active, &.is-focused, &:active, &:focus
+    border-color: #1abc9c
+    box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+
+.input[disabled], .select select[disabled], .textarea[disabled]
+  background-color: #dbdee0
+  border-color: #282f2f
+  box-shadow: none
+  color: #fff
+
+.input[disabled]
+  &:-moz-placeholder, &::-moz-placeholder
+    color: rgba(255, 255, 255, 0.3)
+
+.select select[disabled]
+  &:-moz-placeholder, &::-moz-placeholder
+    color: rgba(255, 255, 255, 0.3)
+
+.textarea[disabled]
+  &:-moz-placeholder, &::-moz-placeholder
+    color: rgba(255, 255, 255, 0.3)
+
+.input[disabled]::-webkit-input-placeholder, .select select[disabled]::-webkit-input-placeholder, .textarea[disabled]::-webkit-input-placeholder, .input[disabled]:-ms-input-placeholder, .select select[disabled]:-ms-input-placeholder, .textarea[disabled]:-ms-input-placeholder
+  color: rgba(255, 255, 255, 0.3)
+
+.input[type=search], .textarea[type=search]
+  border-radius: 290486px
+
+.input[readonly], .textarea[readonly]
+  box-shadow: none
+
+.input.is-white, .textarea.is-white
+  border-color: #fff
+
+.input.is-white
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25)
+
+.textarea.is-white
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25)
+
+.input.is-black, .textarea.is-black
+  border-color: #0a0a0a
+
+.input.is-black
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25)
+
+.textarea.is-black
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25)
+
+.input.is-light, .textarea.is-light
+  border-color: #ecf0f1
+
+.input.is-light
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(236, 240, 241, 0.25)
+
+.textarea.is-light
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(236, 240, 241, 0.25)
+
+.input.is-dark, .select select[disabled]:hover, .textarea.is-dark
+  border-color: #282f2f
+
+.input.is-dark
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(40, 47, 47, 0.25)
+
+.textarea.is-dark
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(40, 47, 47, 0.25)
+
+.input.is-primary, .textarea.is-primary
+  border-color: #375a7f
+
+.input.is-primary
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(55, 90, 127, 0.25)
+
+.textarea.is-primary
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(55, 90, 127, 0.25)
+
+.input.is-link, .textarea.is-link
+  border-color: #1abc9c
+
+.input.is-link
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+
+.textarea.is-link
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+
+.input.is-info, .textarea.is-info
+  border-color: #209cee
+
+.input.is-info
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25)
+
+.textarea.is-info
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25)
+
+.input.is-success, .textarea.is-success
+  border-color: #2ecc71
+
+.input.is-success
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(46, 204, 113, 0.25)
+
+.textarea.is-success
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(46, 204, 113, 0.25)
+
+.input.is-warning, .textarea.is-warning
+  border-color: #f1b70e
+
+.input.is-warning
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(241, 183, 14, 0.25)
+
+.textarea.is-warning
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(241, 183, 14, 0.25)
+
+.input.is-danger, .textarea.is-danger
+  border-color: #e74c3c
+
+.input.is-danger
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(231, 76, 60, 0.25)
+
+.textarea.is-danger
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 0.125em rgba(231, 76, 60, 0.25)
+
+.input.is-small, .textarea.is-small
+  border-radius: 3px
+  font-size: .85em
+
+.input.is-medium, .textarea.is-medium
+  font-size: 1.25rem
+
+.input.is-large, .textarea.is-large
+  font-size: 1.5rem
+
+.input.is-fullwidth, .textarea.is-fullwidth
+  display: block
+  width: 100%
+
+.input.is-inline, .textarea.is-inline
+  display: inline
+  width: auto
+
+.input.is-static
+  background-color: transparent
+  border-color: transparent
+  box-shadow: none
+  padding-left: 0
+  padding-right: 0
+
+.textarea
+  display: block
+  max-width: 100%
+  min-width: 100%
+  padding: .625em
+  resize: vertical
+  &:not([rows])
+    max-height: 600px
+    min-height: 120px
+  &[rows]
+    height: unset
+  &.has-fixed-size
+    resize: none
+
+.checkbox, .radio, .select
+  display: inline-block
+  position: relative
+
+.checkbox, .radio
+  cursor: pointer
+  line-height: 1.25
+
+.checkbox input, .radio input
+  cursor: pointer
+
+.checkbox:hover, .radio:hover
+  color: #8c9b9d
+
+.checkbox[disabled]
+  color: #fff
+  cursor: not-allowed
+
+.radio
+  &[disabled]
+    color: #fff
+    cursor: not-allowed
+  + .radio
+    margin-left: .5em
+
+.select
+  max-width: 100%
+  vertical-align: top
+  &:not(.is-multiple)
+    height: 2.25em
+    &::after
+      border: 1px solid #1abc9c
+      border-right: 0
+      border-top: 0
+      content: " "
+      display: block
+      height: .5em
+      pointer-events: none
+      position: absolute
+      -webkit-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      -webkit-transform-origin: center
+      transform-origin: center
+      width: .5em
+      margin-top: -.375em
+      right: 1.125em
+      top: 50%
+      z-index: 4
+  select
+    -moz-appearance: none
+    -webkit-appearance: none
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    border: 1px solid transparent
+    border-radius: .4em
+    box-shadow: none
+    display: -webkit-inline-box
+    display: -ms-inline-flexbox
+    display: inline-flex
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    line-height: 1.5
+    padding: calc(.375em - 1px) calc(.625em - 1px)
+    position: relative
+    vertical-align: top
+    background-color: #fff
+    border-color: #dbdee0
+    color: #282f2f
+    cursor: pointer
+    display: block
+    font-size: 1em
+    max-width: 100%
+    outline: 0
+    &::-ms-expand
+      display: none
+    &:not([multiple])
+      padding-right: 2.5em
+    &[multiple]
+      height: unset
+      padding: 0
+      option
+        padding: .5em 1em
+  &:hover::after
+    border-color: #8c9b9d
+  &.is-disabled::after
+    border-color: #fff
+  &.is-white select
+    border-color: #fff
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25)
+  &.is-black select
+    border-color: #0a0a0a
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25)
+  &.is-light select
+    border-color: #ecf0f1
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(236, 240, 241, 0.25)
+  &.is-dark select
+    border-color: #282f2f
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(40, 47, 47, 0.25)
+  &.is-primary select
+    border-color: #375a7f
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(55, 90, 127, 0.25)
+  &.is-link select
+    border-color: #1abc9c
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(26, 188, 156, 0.25)
+  &.is-info select
+    border-color: #209cee
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25)
+  &.is-success select
+    border-color: #2ecc71
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(46, 204, 113, 0.25)
+  &.is-warning select
+    border-color: #f1b70e
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(241, 183, 14, 0.25)
+  &.is-danger select
+    border-color: #e74c3c
+    &.is-active, &.is-focused, &:active, &:focus
+      box-shadow: 0 0 0 0.125em rgba(231, 76, 60, 0.25)
+  &.is-small
+    border-radius: 3px
+    font-size: .85em
+  &.is-loading.is-medium:after, &.is-medium
+    font-size: 1.25rem
+  &.is-large, &.is-loading.is-large:after
+    font-size: 1.5rem
+  &.is-fullwidth
+    width: 100%
+    select
+      width: 100%
+  &.is-loading::after
+    -webkit-animation: spinAround 500ms infinite linear
+    animation: spinAround 500ms infinite linear
+    border: 2px solid #5e6d6f
+    border-radius: 290486px
+    border-right-color: transparent
+    border-top-color: transparent
+    content: ""
+    display: block
+    height: 1em
+    width: 1em
+    margin-top: 0
+    position: absolute
+    right: .625em
+    top: .625em
+    -webkit-transform: none
+    transform: none
+
+.file
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  position: relative
+  &.is-white
+    .file-cta
+      background-color: #fff
+      border-color: transparent
+      color: #0a0a0a
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #f9f9f9
+      border-color: transparent
+      color: #0a0a0a
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.25)
+      color: #0a0a0a
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #f2f2f2
+      border-color: transparent
+      color: #0a0a0a
+  &.is-black
+    .file-cta
+      background-color: #0a0a0a
+      border-color: transparent
+      color: #fff
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #040404
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(10, 10, 10, 0.25)
+      color: #fff
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #000
+      border-color: transparent
+      color: #fff
+  &.is-light
+    .file-cta
+      background-color: #ecf0f1
+      border-color: transparent
+      color: #282f2f
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #e5eaec
+      border-color: transparent
+      color: #282f2f
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(236, 240, 241, 0.25)
+      color: #282f2f
+  &.is-dark .file-cta
+    background-color: #dde4e6
+    border-color: transparent
+    color: #282f2f
+  &.is-light
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #dde4e6
+      border-color: transparent
+      color: #282f2f
+  &.is-dark
+    .file-cta
+      background-color: #282f2f
+      color: #ecf0f1
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #232829
+      border-color: transparent
+      color: #ecf0f1
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(40, 47, 47, 0.25)
+      color: #ecf0f1
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #1d2122
+      border-color: transparent
+      color: #ecf0f1
+  &.is-primary
+    .file-cta
+      background-color: #375a7f
+      border-color: transparent
+      color: #fff
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #335476
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(55, 90, 127, 0.25)
+      color: #fff
+  &.is-link .file-cta
+    background-color: #2f4d6d
+    border-color: transparent
+    color: #fff
+  &.is-primary
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #2f4d6d
+      border-color: transparent
+      color: #fff
+  &.is-link
+    .file-cta
+      background-color: #1abc9c
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #18b193
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(26, 188, 156, 0.25)
+      color: #fff
+  &.is-info .file-cta
+    background-color: #17a689
+    border-color: transparent
+    color: #fff
+  &.is-link
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #17a689
+      border-color: transparent
+      color: #fff
+  &.is-info
+    .file-cta
+      background-color: #209cee
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #1496ed
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(32, 156, 238, 0.25)
+      color: #fff
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #118fe4
+      border-color: transparent
+      color: #fff
+  &.is-success
+    .file-cta
+      background-color: #118fe4
+      border-color: transparent
+      color: #fff
+      background-color: #2ecc71
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #2cc26b
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(46, 204, 113, 0.25)
+      color: #fff
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #29b765
+      border-color: transparent
+      color: #fff
+  &.is-warning
+    .file-cta
+      background-color: #29b765
+      border-color: transparent
+      color: #fff
+      background-color: #f1b70e
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #e5ae0d
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(241, 183, 14, 0.25)
+      color: #fff
+  &.is-danger .file-cta
+    background-color: #d9a50d
+    border-color: transparent
+    color: #fff
+  &.is-warning
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #d9a50d
+      border-color: transparent
+      color: #fff
+  &.is-danger
+    .file-cta
+      background-color: #e74c3c
+    &.is-hovered .file-cta, &:hover .file-cta
+      background-color: #e64231
+      border-color: transparent
+      color: #fff
+    &.is-focused .file-cta, &:focus .file-cta
+      border-color: transparent
+      box-shadow: 0 0 0.5em rgba(231, 76, 60, 0.25)
+      color: #fff
+    &.is-active .file-cta, &:active .file-cta
+      background-color: #e43725
+      border-color: transparent
+      color: #fff
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+    .file-icon .fa
+      font-size: 21px
+  &.is-large
+    font-size: 1.5rem
+    .file-icon .fa
+      font-size: 28px
+  &.has-name
+    .file-cta
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+    .file-name
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+    &.is-empty
+      .file-cta
+        border-radius: .4em
+      .file-name
+        display: none
+  &.is-centered
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  &.is-right
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+  &.is-boxed
+    .file-cta, .file-label
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+    .file-cta
+      height: auto
+      padding: 1em 3em
+    .file-name
+      border-width: 0 1px 1px
+    .file-icon
+      height: 1.5em
+      width: 1.5em
+      .fa
+        font-size: 21px
+    &.is-small .file-icon .fa
+      font-size: 14px
+    &.is-medium .file-icon .fa
+      font-size: 28px
+    &.is-large .file-icon .fa
+      font-size: 35px
+    &.has-name
+      .file-cta
+        border-radius: .4em .4em 0 0
+      .file-name
+        border-radius: 0 0 .4em .4em
+        border-width: 0 1px 1px
+  &.is-right
+    .file-cta
+      border-radius: 0 .4em .4em 0
+    .file-name
+      border-radius: .4em 0 0 .4em
+      border-width: 1px 0 1px 1px
+      -webkit-box-ordinal-group: 0
+      -ms-flex-order: -1
+      order: -1
+  &.is-fullwidth
+    .file-label
+      width: 100%
+    .file-name
+      -webkit-box-flex: 1
+      -ms-flex-positive: 1
+      flex-grow: 1
+      max-width: none
+
+.file-label
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  cursor: pointer
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  overflow: hidden
+  position: relative
+  &:hover
+    .file-cta
+      background-color: #e5eaec
+      color: #282f2f
+    .file-name
+      border-color: #596668
+  &:active
+    .file-cta
+      background-color: #dde4e6
+      color: #282f2f
+    .file-name
+      border-color: #535f61
+
+.file-input
+  height: .01em
+  left: 0
+  outline: 0
+  position: absolute
+  top: 0
+  width: .01em
+
+.file-cta
+  border-color: #5e6d6f
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  border: 1px solid transparent
+  box-shadow: none
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  height: 2.25em
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  line-height: 1.5
+  padding: calc(.375em - 1px) calc(.625em - 1px)
+  position: relative
+  vertical-align: top
+  border-radius: .4em
+  font-size: 1em
+  padding-left: 1em
+  padding-right: 1em
+  white-space: nowrap
+
+.file-name
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  border: 1px solid transparent
+  box-shadow: none
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  height: 2.25em
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  line-height: 1.5
+  padding: calc(.375em - 1px) calc(.625em - 1px)
+  position: relative
+  vertical-align: top
+  border-radius: .4em
+  font-size: 1em
+  padding-left: 1em
+  padding-right: 1em
+  white-space: nowrap
+
+.file-cta
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.file-name
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.file-cta[disabled], .file-name[disabled]
+  cursor: not-allowed
+
+.file-cta
+  background-color: #ecf0f1
+  color: #343c3d
+
+.file-name
+  border-color: #5e6d6f
+  border-style: solid
+  border-width: 1px 1px 1px 0
+  display: block
+  max-width: 16em
+  overflow: hidden
+  text-align: left
+  text-overflow: ellipsis
+
+.file-icon
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  height: 1em
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin-right: .5em
+  width: 1em
+  .fa
+    font-size: 14px
+
+.label
+  display: block
+  font-size: 15px
+  font-weight: 700
+  &:not(:last-child)
+    margin-bottom: .5em
+
+.help
+  font-size: .85em
+
+.label
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+
+.help
+  display: block
+  margin-top: .25rem
+  &.is-white
+    color: #fff
+  &.is-black
+    color: #0a0a0a
+  &.is-light
+    color: #ecf0f1
+  &.is-dark
+    color: #282f2f
+  &.is-primary
+    color: #375a7f
+  &.is-link
+    color: #1abc9c
+  &.is-info
+    color: #209cee
+  &.is-success
+    color: #2ecc71
+  &.is-warning
+    color: #f1b70e
+  &.is-danger
+    color: #e74c3c
+
+.field
+  &:not(:last-child)
+    margin-bottom: .75rem
+  &.has-addons, &.is-grouped
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+  &.has-addons
+    .control
+      &:not(:last-child)
+        margin-right: -1px
+      &:first-child
+        .button, .input, .select select
+          border-bottom-left-radius: .4em
+          border-top-left-radius: .4em
+      &:last-child
+        .button, .input, .select select
+          border-bottom-right-radius: .4em
+          border-top-right-radius: .4em
+      .button, .input, .select select
+        border-radius: 0
+      .button
+        &.is-hovered, &:hover
+          z-index: 2
+      .input
+        &.is-hovered, &:hover
+          z-index: 2
+      .select select
+        &.is-hovered, &:hover
+          z-index: 2
+      .button
+        &.is-active, &.is-focused, &:active, &:focus
+          z-index: 3
+      .input
+        &.is-active, &.is-focused, &:active, &:focus
+          z-index: 3
+      .select select
+        &.is-active, &.is-focused, &:active, &:focus
+          z-index: 3
+      &.is-expanded
+        -webkit-box-flex: 1
+        -ms-flex-positive: 1
+        flex-grow: 1
+    &.has-addons-centered
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+    &.has-addons-right
+      -webkit-box-pack: end
+      -ms-flex-pack: end
+      justify-content: flex-end
+    &.has-addons-fullwidth .control
+      -webkit-box-flex: 1
+      -ms-flex-positive: 1
+      flex-grow: 1
+      -ms-flex-negative: 0
+      flex-shrink: 0
+
+.tabs.is-fullwidth li
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 0
+  flex-shrink: 0
+
+.field.is-grouped
+  > .control
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    &:not(:last-child)
+      margin-bottom: 0
+      margin-right: .75rem
+    &.is-expanded
+      -webkit-box-flex: 1
+      -ms-flex-positive: 1
+      flex-grow: 1
+      -ms-flex-negative: 1
+      flex-shrink: 1
+  &.is-grouped-centered
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  &.is-grouped-right
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+  &.is-grouped-multiline
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    > .control
+      &:last-child, &:not(:last-child)
+        margin-bottom: .75rem
+    &:last-child
+      margin-bottom: -.75rem
+    &:not(:last-child)
+      margin-bottom: 0
+
+@media screen and (min-width: 769px), print
+  .field.is-horizontal
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.field-label .label
+  font-size: inherit
+
+@media screen and (max-width: 768px)
+  .field-label
+    margin-bottom: .5rem
+
+@media screen and (min-width: 769px), print
+  .field-label
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    margin-right: 1.5rem
+    text-align: right
+    &.is-small
+      font-size: .85em
+      padding-top: .375em
+    &.is-normal
+      padding-top: .375em
+    &.is-medium
+      font-size: 1.25rem
+      padding-top: .375em
+    &.is-large
+      font-size: 1.5rem
+      padding-top: .375em
+
+.field-body .field .field
+  margin-bottom: 0
+
+@media screen and (min-width: 769px), print
+  .field-body
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    -webkit-box-flex: 5
+    -ms-flex-positive: 5
+    flex-grow: 5
+    .field
+      margin-bottom: 0
+    -ms-flex-negative: 1
+    flex-shrink: 1
+    > .field
+      -ms-flex-negative: 1
+      flex-shrink: 1
+      &:not(.is-narrow)
+        -webkit-box-flex: 1
+        -ms-flex-positive: 1
+        flex-grow: 1
+      &:not(:last-child)
+        margin-right: .75rem
+
+.control
+  font-size: 15px
+  position: relative
+  text-align: left
+  &.has-icon .icon
+    height: 2.25em
+    color: #dbdee0
+    pointer-events: none
+    position: absolute
+    top: 0
+    width: 2.25em
+    z-index: 4
+  &.has-icons-left .icon, &.has-icons-right .icon
+    color: #dbdee0
+    pointer-events: none
+    position: absolute
+    top: 0
+    width: 2.25em
+    z-index: 4
+  &.has-icon
+    .input
+      &:focus + .icon
+        color: #5e6d6f
+      &.is-small + .icon
+        font-size: .85em
+      &.is-medium + .icon
+        font-size: 1.25rem
+      &.is-large + .icon
+        font-size: 1.5rem
+    &:not(.has-icon-right)
+      .icon
+        left: 0
+      .input
+        padding-left: 2.25em
+    &.has-icon-right
+      .icon
+        right: 0
+      .input
+        padding-right: 2.25em
+  &.has-icons-left
+    .input:focus ~ .icon, .select:focus ~ .icon
+      color: #5e6d6f
+  &.has-icons-right
+    .input:focus ~ .icon, .select:focus ~ .icon
+      color: #5e6d6f
+  &.has-icons-left
+    .input.is-small ~ .icon, .select.is-small ~ .icon
+      font-size: .85em
+  &.has-icons-right
+    .input.is-small ~ .icon, .select.is-small ~ .icon
+      font-size: .85em
+  &.is-loading.is-small:after
+    font-size: .85em
+  &.has-icons-left
+    .input.is-medium ~ .icon, .select.is-medium ~ .icon
+      font-size: 1.25rem
+  &.has-icons-right
+    .input.is-medium ~ .icon, .select.is-medium ~ .icon
+      font-size: 1.25rem
+  &.is-loading.is-medium:after
+    font-size: 1.25rem
+  &.has-icons-left
+    .input.is-large ~ .icon, .select.is-large ~ .icon
+      font-size: 1.5rem
+  &.has-icons-right
+    .input.is-large ~ .icon, .select.is-large ~ .icon
+      font-size: 1.5rem
+  &.is-loading.is-large:after
+    font-size: 1.5rem
+  &.has-icons-left
+    .input, .select select
+      padding-left: 2.25em
+    .icon.is-left
+      left: 0
+  &.has-icons-right
+    .input, .select select
+      padding-right: 2.25em
+    .icon.is-right
+      right: 0
+  &.is-loading::after
+    -webkit-animation: spinAround 500ms infinite linear
+    animation: spinAround 500ms infinite linear
+    border: 2px solid #5e6d6f
+    border-radius: 290486px
+    border-right-color: transparent
+    border-top-color: transparent
+    content: ""
+    display: block
+    height: 1em
+    width: 1em
+    position: absolute !important
+    right: .625em
+    top: .625em
+
+.icon
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  height: 1.5rem
+  width: 1.5rem
+  &.is-small
+    height: 1rem
+    width: 1rem
+  &.is-medium
+    height: 2rem
+    width: 2rem
+  &.is-large
+    height: 3rem
+    width: 3rem
+
+.image
+  display: block
+  position: relative
+  img
+    display: block
+    height: auto
+    width: 100%
+  &.is-16by9 img, &.is-1by1 img, &.is-2by1 img, &.is-3by2 img, &.is-4by3 img, &.is-square img
+    bottom: 0
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    width: 100%
+  &.is-1by1, &.is-square
+    padding-top: 100%
+  &.is-4by3
+    padding-top: 75%
+  &.is-3by2
+    padding-top: 66.6666%
+  &.is-16by9
+    padding-top: 56.25%
+  &.is-2by1
+    padding-top: 50%
+  &.is-16x16
+    height: 16px
+    width: 16px
+  &.is-24x24
+    height: 24px
+    width: 24px
+  &.is-32x32
+    height: 32px
+    width: 32px
+  &.is-48x48
+    height: 48px
+    width: 48px
+  &.is-64x64
+    height: 64px
+    width: 64px
+  &.is-96x96
+    height: 96px
+    width: 96px
+  &.is-128x128
+    height: 128px
+    width: 128px
+
+.notification
+  border-radius: .4em
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem
+  position: relative
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+.message a:not(.button):not(.tag)
+  color: currentColor
+  text-decoration: underline
+
+.notification
+  a:not(.button)
+    color: currentColor
+    text-decoration: underline
+  code
+    background: #fff
+  pre
+    background: #fff
+    code
+      background: 0 0
+  > .delete
+    position: absolute
+    right: .5em
+    top: .5em
+  .content, .subtitle, .title, strong
+    color: currentColor
+
+.table
+  td.is-selected
+    a, strong
+      color: currentColor
+  th.is-selected
+    a, strong
+      color: currentColor
+  tr.is-selected
+    a, strong
+      color: currentColor
+
+.notification
+  &.is-white
+    background-color: #fff
+    color: #0a0a0a
+  &.is-black
+    background-color: #0a0a0a
+    color: #fff
+  &.is-light
+    background-color: #ecf0f1
+    color: #282f2f
+  &.is-dark
+    background-color: #282f2f
+    color: #ecf0f1
+  &.is-primary
+    background-color: #375a7f
+    color: #fff
+  &.is-link
+    background-color: #1abc9c
+    color: #fff
+  &.is-info
+    background-color: #209cee
+    color: #fff
+  &.is-success
+    background-color: #2ecc71
+    color: #fff
+  &.is-warning
+    background-color: #f1b70e
+    color: #fff
+  &.is-danger
+    background-color: #e74c3c
+    color: #fff
+
+.progress
+  -moz-appearance: none
+  -webkit-appearance: none
+  border: 0
+  border-radius: 290486px
+  display: block
+  height: 15px
+  overflow: hidden
+  padding: 0
+  width: 100%
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  &::-webkit-progress-bar
+    background-color: #5e6d6f
+  &.is-white
+    &::-webkit-progress-value, &::-moz-progress-bar
+      background-color: #fff
+  &::-ms-fill
+    border: 0
+  &.is-white::-ms-fill, &::-ms-fill
+    background-color: #fff
+  &.is-black
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #0a0a0a
+  &.is-light
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #ecf0f1
+  &.is-dark
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #282f2f
+  &.is-primary
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #375a7f
+  &.is-link
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #1abc9c
+  &.is-info
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #209cee
+  &.is-success
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #2ecc71
+  &.is-warning
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #f1b70e
+  &.is-danger
+    &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill
+      background-color: #e74c3c
+  &.is-small
+    height: .85em
+  &.is-medium
+    height: 1.25rem
+  &.is-large
+    height: 1.5rem
+
+.table
+  background-color: #343c3d
+  color: #fff
+  margin-bottom: 1.5rem
+  td.is-white, th.is-white
+    background-color: #fff
+    border-color: #fff
+    color: #0a0a0a
+
+.hero.is-white .tabs
+  &.is-boxed li.is-active a, &.is-toggle li.is-active a
+    background-color: #0a0a0a
+    border-color: #0a0a0a
+    color: #fff
+    &:hover
+      background-color: #0a0a0a
+      border-color: #0a0a0a
+      color: #fff
+
+.table
+  td.is-black, th.is-black
+    background-color: #0a0a0a
+    border-color: #0a0a0a
+    color: #fff
+  td.is-light, th.is-light
+    background-color: #ecf0f1
+    border-color: #ecf0f1
+    color: #282f2f
+  td.is-dark, th.is-dark
+    background-color: #282f2f
+    border-color: #282f2f
+    color: #ecf0f1
+  td.is-primary, th.is-primary
+    background-color: #375a7f
+    border-color: #375a7f
+    color: #fff
+  td.is-link, th.is-link
+    background-color: #1abc9c
+    border-color: #1abc9c
+    color: #fff
+  td.is-info, th.is-info
+    background-color: #209cee
+    border-color: #209cee
+    color: #fff
+  td.is-success, th.is-success
+    background-color: #2ecc71
+    border-color: #2ecc71
+    color: #fff
+  td.is-warning, th.is-warning
+    background-color: #f1b70e
+    border-color: #f1b70e
+    color: #fff
+  td.is-danger, th.is-danger
+    background-color: #e74c3c
+    border-color: #e74c3c
+    color: #fff
+  td.is-narrow, th.is-narrow
+    white-space: nowrap
+    width: 1%
+  td.is-selected, th.is-selected
+    background-color: #375a7f
+    color: #fff
+  tr.is-selected
+    background-color: #375a7f
+    color: #fff
+    td, th
+      border-color: #fff
+      color: currentColor
+  &.is-bordered
+    td, th
+      border-width: 1px
+    tr:last-child
+      td, th
+        border-bottom-width: 1px
+  &.is-fullwidth
+    width: 100%
+  &.is-hoverable
+    tbody tr:not(.is-selected):hover
+      background-color: #282f2f
+    &.is-striped tbody tr:not(.is-selected):hover
+      background-color: #2d3435
+  &.is-narrow
+    td, th
+      padding: .25em .5em
+  &.is-striped tbody tr:not(.is-selected):nth-child(even)
+    background-color: #282f2f
+
+.tags
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  .tag
+    margin-bottom: .5rem
+    &:not(:last-child)
+      margin-right: .5rem
+  &:last-child
+    margin-bottom: -.5rem
+  &:not(:last-child)
+    margin-bottom: 1rem
+  &.has-addons .tag
+    margin-right: 0
+    &:not(:first-child)
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+    &:not(:last-child)
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+
+.breadcrumb.is-centered
+  ol, ul
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+.tags.is-centered
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  .tag
+    margin-right: .25rem
+    margin-left: .25rem
+
+.breadcrumb.is-right
+  ol, ul
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+
+.tags.is-right
+  -webkit-box-pack: end
+  -ms-flex-pack: end
+  justify-content: flex-end
+  .tag
+    &:not(:first-child)
+      margin-left: .5rem
+    &:not(:last-child)
+      margin-right: 0
+
+.tag:not(body)
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  background-color: #282f2f
+  border-radius: .4em
+  color: #fff
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  font-size: .85em
+  height: 2em
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  line-height: 1.5
+  padding-left: .75em
+  padding-right: .75em
+  white-space: nowrap
+  .delete
+    margin-left: .25em
+    margin-right: -.375em
+  &.is-white
+    background-color: #fff
+    color: #0a0a0a
+  &.is-black
+    background-color: #0a0a0a
+    color: #fff
+  &.is-light
+    background-color: #ecf0f1
+    color: #282f2f
+  &.is-dark
+    background-color: #282f2f
+    color: #ecf0f1
+  &.is-primary
+    background-color: #375a7f
+    color: #fff
+  &.is-link
+    background-color: #1abc9c
+    color: #fff
+  &.is-info
+    background-color: #209cee
+    color: #fff
+  &.is-success
+    background-color: #2ecc71
+    color: #fff
+  &.is-warning
+    background-color: #f1b70e
+    color: #fff
+  &.is-danger
+    background-color: #e74c3c
+    color: #fff
+  &.is-medium
+    font-size: 15px
+  &.is-large
+    font-size: 1.25rem
+  .icon
+    &:first-child:not(:last-child)
+      margin-left: -.375em
+      margin-right: .1875em
+    &:last-child:not(:first-child)
+      margin-left: .1875em
+      margin-right: -.375em
+    &:first-child:last-child
+      margin-left: -.375em
+      margin-right: -.375em
+  &.is-delete
+    margin-left: 1px
+    padding: 0
+    position: relative
+    width: 2em
+    &:after
+      background-color: currentColor
+      content: ""
+      display: block
+      left: 50%
+      position: absolute
+      top: 50%
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+      transform: translateX(-50%) translateY(-50%) rotate(45deg)
+      -webkit-transform-origin: center center
+      transform-origin: center center
+    &:before
+      background-color: currentColor
+      content: ""
+      display: block
+      left: 50%
+      position: absolute
+      top: 50%
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+      transform: translateX(-50%) translateY(-50%) rotate(45deg)
+      -webkit-transform-origin: center center
+      transform-origin: center center
+      height: 1px
+      width: 50%
+    &:after
+      height: 50%
+      width: 1px
+    &:focus, &:hover
+      background-color: #1d2122
+    &:active
+      background-color: #111414
+  &.is-rounded
+    border-radius: 290486px
+
+a.tag:hover
+  text-decoration: underline
+
+.subtitle, .title
+  word-break: break-word
+
+.subtitle:not(:last-child), .title:not(:last-child)
+  margin-bottom: 1.5rem
+
+.subtitle
+  em, span
+    font-weight: inherit
+
+.title
+  em, span, strong
+    font-weight: inherit
+
+.subtitle .tag
+  vertical-align: middle
+
+.title
+  .tag
+    vertical-align: middle
+  color: #fff
+  font-size: 2rem
+  font-weight: 500
+  line-height: 1.125
+  strong
+    color: inherit
+  + .highlight
+    margin-top: -.75rem
+
+.subtitle:not(.is-spaced) + .title
+  margin-top: -1.5rem
+
+.title
+  &:not(.is-spaced) + .subtitle
+    margin-top: -1.5rem
+  &.is-1
+    font-size: 3rem
+  &.is-2
+    font-size: 2.5rem
+  &.is-3
+    font-size: 2rem
+  &.is-4
+    font-size: 1.5rem
+
+.subtitle
+  font-size: 1.25rem
+
+.title
+  &.is-5
+    font-size: 1.25rem
+  &.is-6
+    font-size: 15px
+  &.is-7
+    font-size: .85em
+
+.subtitle
+  color: #8c9b9d
+  font-weight: 400
+  line-height: 1.25
+  strong
+    color: #8c9b9d
+    font-weight: 600
+  &.is-1
+    font-size: 3rem
+  &.is-2
+    font-size: 2.5rem
+  &.is-3
+    font-size: 2rem
+  &.is-4
+    font-size: 1.5rem
+  &.is-5
+    font-size: 1.25rem
+  &.is-6
+    font-size: 15px
+  &.is-7
+    font-size: .85em
+
+.block:not(:last-child)
+  margin-bottom: 1.5rem
+
+.delete
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  background-color: rgba(10, 10, 10, 0.2)
+  border: 0
+  border-radius: 290486px
+  cursor: pointer
+  display: inline-block
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  font-size: 0
+  height: 20px
+  max-height: 20px
+  max-width: 20px
+  min-height: 20px
+  min-width: 20px
+  outline: 0
+  position: relative
+  vertical-align: top
+  width: 20px
+  &:after
+    background-color: #fff
+    content: ""
+    display: block
+    left: 50%
+    position: absolute
+    top: 50%
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    -webkit-transform-origin: center center
+    transform-origin: center center
+  &:before
+    background-color: #fff
+    content: ""
+    display: block
+    left: 50%
+    position: absolute
+    top: 50%
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    -webkit-transform-origin: center center
+    transform-origin: center center
+    height: 2px
+    width: 50%
+  &:after
+    height: 50%
+    width: 2px
+  &:focus, &:hover
+    background-color: rgba(10, 10, 10, 0.3)
+  &:active
+    background-color: rgba(10, 10, 10, 0.4)
+  &.is-small
+    height: 16px
+    max-height: 16px
+    max-width: 16px
+    min-height: 16px
+    min-width: 16px
+    width: 16px
+  &.is-medium
+    height: 24px
+    max-height: 24px
+    max-width: 24px
+    min-height: 24px
+    min-width: 24px
+    width: 24px
+  &.is-large
+    height: 32px
+    max-height: 32px
+    max-width: 32px
+    min-height: 32px
+    min-width: 32px
+    width: 32px
+
+.heading
+  display: block
+  font-size: 11px
+  letter-spacing: 1px
+  margin-bottom: 5px
+  text-transform: uppercase
+
+.highlight
+  font-weight: 400
+  max-width: 100%
+  overflow: hidden
+  padding: 0
+
+.breadcrumb:not(:last-child)
+  margin-bottom: 1.5rem
+
+.highlight
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  pre
+    overflow: auto
+    max-width: 100%
+
+.loader, .number
+  border-radius: 290486px
+
+.loader
+  -webkit-animation: spinAround 500ms infinite linear
+  animation: spinAround 500ms infinite linear
+  border: 2px solid #5e6d6f
+  border-right-color: transparent
+  border-top-color: transparent
+  content: ""
+  display: block
+  position: relative
+  width: 1em
+  height: 1em
+
+.number
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  background-color: #282f2f
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  font-size: 1.25rem
+  height: 2em
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin-right: 1.5rem
+  min-width: 2.5em
+  padding: .25rem .5rem
+  text-align: center
+  vertical-align: top
+
+.breadcrumb
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  a, li
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  font-size: 15px
+  overflow: hidden
+  overflow-x: auto
+  white-space: nowrap
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  a
+    color: #1abc9c
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    padding: .5em .75em
+    &:hover
+      color: #1dd2af
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+  li
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    &:first-child a
+      padding-left: 0
+    &.is-active a
+      color: #f2f2f2
+      cursor: default
+      pointer-events: none
+    + li::before
+      color: #fff
+      content: "\0002f"
+  ol, ul
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+  .icon
+    &:first-child
+      margin-right: .5em
+    &:last-child
+      margin-left: .5em
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+  &.has-arrow-separator li + li::before
+    content: "\02192"
+  &.has-bullet-separator li + li::before
+    content: "\02022"
+  &.has-dot-separator li + li::before
+    content: "\000b7"
+  &.has-succeeds-separator li + li::before
+    content: "\0227B"
+
+.card
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+  color: #fff
+  max-width: 100%
+  position: relative
+
+.card-header, .card-header-title
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+.card-header
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1)
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+
+.card-header-title
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  color: #f2f2f2
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  font-weight: 700
+  padding: .75rem
+
+.card-header-icon, .card-header-title.is-centered
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+
+.card-header-icon
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  cursor: pointer
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  padding: .75rem
+
+.card-image
+  display: block
+  position: relative
+
+.card-content
+  padding: 1.5rem
+
+.card-footer, .card-footer-item
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+.card-footer
+  border-top: 1px solid #5e6d6f
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+
+.card-footer-item
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -ms-flex-preferred-size: 0
+  flex-basis: 0
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  padding: .75rem
+  &:not(:last-child)
+    border-right: 1px solid #5e6d6f
+
+.card .media:not(:last-child)
+  margin-bottom: .75rem
+
+.dropdown
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  position: relative
+  vertical-align: top
+  &.is-active .dropdown-menu, &.is-hoverable:hover .dropdown-menu
+    display: block
+  &.is-right .dropdown-menu
+    left: auto
+    right: 0
+  &.is-up .dropdown-menu
+    bottom: 100%
+    padding-bottom: 4px
+    padding-top: unset
+    top: auto
+
+.dropdown-menu
+  display: none
+  left: 0
+  min-width: 12rem
+  padding-top: 4px
+  position: absolute
+  top: 100%
+  z-index: 20
+
+.dropdown-content
+  background-color: #282f2f
+  border-radius: .4em
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+  padding-bottom: .5rem
+  padding-top: .5rem
+
+.dropdown-item
+  color: #fff
+  display: block
+  font-size: .875rem
+  line-height: 1.5
+  padding: .375rem 1rem
+  position: relative
+
+a.dropdown-item
+  padding-right: 3rem
+  white-space: nowrap
+  &:hover
+    background-color: #282f2f
+    color: #0a0a0a
+  &.is-active
+    background-color: #1abc9c
+    color: #fff
+
+.dropdown-divider
+  background-color: #5e6d6f
+  border: 0
+  display: block
+  height: 1px
+  margin: .5rem 0
+
+.level
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  code
+    border-radius: .4em
+  img
+    display: inline-block
+    vertical-align: top
+  &.is-mobile
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    .level-left, .level-right
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+    .level-left + .level-right
+      margin-top: 0
+    .level-item
+      margin-right: .75rem
+      &:not(:last-child)
+        margin-bottom: 0
+      &:not(.is-narrow)
+        -webkit-box-flex: 1
+        -ms-flex-positive: 1
+        flex-grow: 1
+
+@media screen and (min-width: 769px), print
+  .level
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    > .level-item:not(.is-narrow)
+      -webkit-box-flex: 1
+      -ms-flex-positive: 1
+      flex-grow: 1
+
+.level-item
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  .subtitle, .title
+    margin-bottom: 0
+  -ms-flex-preferred-size: auto
+  flex-basis: auto
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+
+@media screen and (max-width: 768px)
+  .level-item:not(:last-child)
+    margin-bottom: .75rem
+
+.level-left, .level-right
+  -ms-flex-preferred-size: auto
+  flex-basis: auto
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+
+.level-left .level-item.is-flexible, .level-right .level-item.is-flexible
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+
+@media screen and (min-width: 769px), print
+  .level-left .level-item:not(:last-child), .level-right .level-item:not(:last-child)
+    margin-right: .75rem
+
+.level-left
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+
+@media screen and (max-width: 768px)
+  .level-left + .level-right
+    margin-top: 1.5rem
+
+@media screen and (min-width: 769px), print
+  .level-left
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.level-right
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: end
+  -ms-flex-pack: end
+  justify-content: flex-end
+
+@media screen and (min-width: 769px), print
+  .level-right
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.media
+  -webkit-box-align: start
+  -ms-flex-align: start
+  align-items: flex-start
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  text-align: left
+  .content:not(:last-child)
+    margin-bottom: .75rem
+  .media
+    border-top: 1px solid rgba(94, 109, 111, 0.5)
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    padding-top: .75rem
+    .content:not(:last-child), .control:not(:last-child)
+      margin-bottom: .5rem
+    .media
+      padding-top: .5rem
+      + .media
+        margin-top: .5rem
+  + .media
+    border-top: 1px solid rgba(94, 109, 111, 0.5)
+    margin-top: 1rem
+    padding-top: 1rem
+  &.is-large + .media
+    margin-top: 1.5rem
+    padding-top: 1.5rem
+
+.media-left, .media-right
+  -ms-flex-preferred-size: auto
+  flex-basis: auto
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+
+.media-left
+  margin-right: 1rem
+
+.media-right
+  margin-left: 1rem
+
+.media-content
+  -ms-flex-preferred-size: auto
+  flex-basis: auto
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 1
+  flex-shrink: 1
+  text-align: left
+
+.menu
+  font-size: 15px
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+
+.menu-list
+  line-height: 1.25
+  a
+    border-radius: 3px
+    color: #fff
+    display: block
+    padding: .5em .75em
+    &:hover
+      background-color: #282f2f
+      color: #f2f2f2
+    &.is-active
+      background-color: #1abc9c
+      color: #fff
+  li ul
+    border-left: 1px solid #5e6d6f
+    margin: .75em
+    padding-left: .75em
+
+.menu-label
+  color: #fff
+  font-size: .75em
+  letter-spacing: .1em
+  text-transform: uppercase
+  &:not(:first-child)
+    margin-top: 1em
+  &:not(:last-child)
+    margin-bottom: 1em
+
+.message
+  background-color: #282f2f
+  border-radius: .4em
+  font-size: 15px
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  strong
+    color: currentColor
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+
+.message-body
+  code, pre
+    background-color: #fff
+
+.message
+  &.is-white
+    background-color: #fff
+    .message-header
+      background-color: #fff
+      color: #0a0a0a
+    .message-body
+      border-color: #fff
+      color: #4d4d4d
+  &.is-black
+    background-color: #fafafa
+    .message-header
+      background-color: #0a0a0a
+      color: #fff
+    .message-body
+      border-color: #0a0a0a
+      color: #090909
+  &.is-light
+    background-color: #f9fafb
+    .message-header
+      background-color: #ecf0f1
+      color: #282f2f
+    .message-body
+      border-color: #ecf0f1
+      color: #505050
+  &.is-dark
+    background-color: #f9fafa
+    .message-header
+      background-color: #282f2f
+      color: #ecf0f1
+    .message-body
+      border-color: #282f2f
+      color: #212526
+  &.is-primary
+    background-color: #f8fafc
+    .message-header
+      background-color: #375a7f
+      color: #fff
+    .message-body
+      border-color: #375a7f
+      color: #2b4159
+  &.is-link
+    background-color: #f6fefc
+    .message-header
+      background-color: #1abc9c
+      color: #fff
+    .message-body
+      border-color: #1abc9c
+      color: #0b2f28
+  &.is-info
+    background-color: #f6fbfe
+    .message-header
+      background-color: #209cee
+      color: #fff
+    .message-body
+      border-color: #209cee
+      color: #12537e
+  &.is-success
+    background-color: #f7fdf9
+    .message-header
+      background-color: #2ecc71
+      color: #fff
+    .message-body
+      border-color: #2ecc71
+      color: #133622
+  &.is-warning
+    background-color: #fefcf5
+    .message-header
+      background-color: #f1b70e
+      color: #fff
+    .message-body
+      border-color: #f1b70e
+      color: #2b2107
+  &.is-danger
+    background-color: #fef7f6
+    .message-header
+      background-color: #e74c3c
+      color: #fff
+    .message-body
+      border-color: #e74c3c
+      color: #a82a1d
+
+.message-header
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  border-radius: .4em .4em 0 0
+  color: rgba(0, 0, 0, 0.7)
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  line-height: 1.25
+  padding: .5em .75em
+  position: relative
+  .delete
+    -webkit-box-flex: 0
+    -ms-flex-positive: 0
+    flex-grow: 0
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    margin-left: .75em
+  + .message-body
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    border-top: none
+
+.message-body
+  border: 1px solid #5e6d6f
+  border-radius: .4em
+  color: #fff
+  padding: 1em 1.25em
+  pre code
+    background-color: transparent
+
+.modal, .modal-background
+  bottom: 0
+  left: 0
+  right: 0
+  top: 0
+
+.modal
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  display: none
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  overflow: hidden
+  z-index: 20
+  position: fixed
+  &.is-active
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.modal-background
+  position: absolute
+  background-color: rgba(10, 10, 10, 0.86)
+
+.modal-content
+  max-height: calc(100vh - 160px)
+  overflow: auto
+
+.modal-card, .modal-content
+  margin: 0 20px
+  position: relative
+  width: 100%
+
+@media screen and (min-width: 769px), print
+  .modal-card, .modal-content
+    margin: 0 auto
+    max-height: calc(100vh - 40px)
+    width: 640px
+
+.modal-close
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  background-color: rgba(10, 10, 10, 0.2)
+  border: 0
+  border-radius: 290486px
+  cursor: pointer
+  display: inline-block
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  font-size: 0
+  max-height: 20px
+  max-width: 20px
+  min-height: 20px
+  min-width: 20px
+  outline: 0
+  vertical-align: top
+  background: 0 0
+  height: 40px
+  position: fixed
+  right: 20px
+  top: 20px
+  width: 40px
+  &:after
+    background-color: #fff
+    content: ""
+    display: block
+    left: 50%
+    position: absolute
+    top: 50%
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    -webkit-transform-origin: center center
+    transform-origin: center center
+  &:before
+    background-color: #fff
+    content: ""
+    display: block
+    left: 50%
+    position: absolute
+    top: 50%
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    -webkit-transform-origin: center center
+    transform-origin: center center
+    height: 2px
+    width: 50%
+  &:after
+    height: 50%
+    width: 2px
+  &:focus, &:hover
+    background-color: rgba(10, 10, 10, 0.3)
+  &:active
+    background-color: rgba(10, 10, 10, 0.4)
+  &.is-small
+    height: 16px
+    max-height: 16px
+    max-width: 16px
+    min-height: 16px
+    min-width: 16px
+    width: 16px
+  &.is-medium
+    height: 24px
+    max-height: 24px
+    max-width: 24px
+    min-height: 24px
+    min-width: 24px
+    width: 24px
+  &.is-large
+    height: 32px
+    max-height: 32px
+    max-width: 32px
+    min-height: 32px
+    min-width: 32px
+    width: 32px
+
+.modal-card, .modal-card-foot, .modal-card-head
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+.modal-card
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  max-height: calc(100vh - 40px)
+  overflow: hidden
+
+.modal-card-foot
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  background-color: #282f2f
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  padding: 20px
+  position: relative
+
+.modal-card-head
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  background-color: #282f2f
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  padding: 20px
+  position: relative
+  border-bottom: 1px solid #5e6d6f
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+
+.modal-card-title
+  color: #f2f2f2
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  font-size: 1.5rem
+  line-height: 1
+
+.modal-card-foot
+  border-bottom-left-radius: 8px
+  border-bottom-right-radius: 8px
+  border-top: 1px solid #5e6d6f
+  .button:not(:last-child)
+    margin-right: 10px
+
+.modal-card-body
+  -webkit-overflow-scrolling: touch
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 1
+  flex-shrink: 1
+  overflow: auto
+  padding: 20px
+
+.navbar
+  background-color: #375a7f
+  min-height: 4rem
+  position: relative
+  &.is-white
+    background-color: #fff
+    color: #0a0a0a
+    .navbar-brand
+      .navbar-link
+        color: #0a0a0a
+        &.is-active, &:hover
+          background-color: #f2f2f2
+          color: #0a0a0a
+        &::after
+          border-color: #0a0a0a
+      > .navbar-item
+        color: #0a0a0a
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #f2f2f2
+          color: #0a0a0a
+  &.is-black
+    background-color: #0a0a0a
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #000
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #000
+          color: #fff
+  &.is-light
+    background-color: #ecf0f1
+    color: #282f2f
+    .navbar-brand
+      .navbar-link
+        color: #282f2f
+        &.is-active, &:hover
+          background-color: #dde4e6
+          color: #282f2f
+        &::after
+          border-color: #282f2f
+      > .navbar-item
+        color: #282f2f
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #dde4e6
+          color: #282f2f
+  &.is-dark
+    background-color: #282f2f
+    color: #ecf0f1
+    .navbar-brand
+      .navbar-link
+        color: #ecf0f1
+        &.is-active, &:hover
+          background-color: #1d2122
+          color: #ecf0f1
+        &::after
+          border-color: #ecf0f1
+      > .navbar-item
+        color: #ecf0f1
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #1d2122
+          color: #ecf0f1
+  &.is-primary
+    background-color: #375a7f
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #2f4d6d
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #2f4d6d
+          color: #fff
+  &.is-link
+    background-color: #1abc9c
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #17a689
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #17a689
+          color: #fff
+  &.is-info
+    background-color: #209cee
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #118fe4
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #118fe4
+          color: #fff
+  &.is-success
+    background-color: #2ecc71
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #29b765
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #29b765
+          color: #fff
+  &.is-warning
+    background-color: #f1b70e
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #d9a50d
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #d9a50d
+          color: #fff
+  &.is-danger
+    background-color: #e74c3c
+    color: #fff
+    .navbar-brand
+      .navbar-link
+        color: #fff
+        &.is-active, &:hover
+          background-color: #e43725
+          color: #fff
+        &::after
+          border-color: #fff
+      > .navbar-item
+        color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #e43725
+          color: #fff
+  > .container
+    -webkit-box-align: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    min-height: 4rem
+    width: 100%
+  &.has-shadow
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1)
+  &.is-fixed-bottom, &.is-fixed-top
+    left: 0
+    position: fixed
+    right: 0
+    z-index: 30
+  &.is-fixed-bottom
+    bottom: 0
+    &.has-shadow
+      box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1)
+  &.is-fixed-top
+    top: 0
+
+@media screen and (min-width: 1024px)
+  .navbar.is-white
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #0a0a0a
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #0a0a0a
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #f2f2f2
+          color: #0a0a0a
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #f2f2f2
+          color: #0a0a0a
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #f2f2f2
+        color: #0a0a0a
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #f2f2f2
+          color: #0a0a0a
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #f2f2f2
+          color: #0a0a0a
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #0a0a0a
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #fff
+      color: #0a0a0a
+
+@media screen and (min-width: 1024px)
+  .navbar.is-black
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #000
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #000
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #000
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #000
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #000
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #0a0a0a
+      color: #fff
+
+@media screen and (min-width: 1024px)
+  .navbar.is-light
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #282f2f
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #282f2f
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #dde4e6
+          color: #282f2f
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #dde4e6
+          color: #282f2f
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #dde4e6
+        color: #282f2f
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #dde4e6
+          color: #282f2f
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #dde4e6
+          color: #282f2f
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #282f2f
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #ecf0f1
+      color: #282f2f
+
+@media screen and (min-width: 1024px)
+  .navbar.is-dark
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #ecf0f1
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #ecf0f1
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #1d2122
+          color: #ecf0f1
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #1d2122
+          color: #ecf0f1
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #1d2122
+        color: #ecf0f1
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #1d2122
+          color: #ecf0f1
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #1d2122
+          color: #ecf0f1
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #ecf0f1
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #282f2f
+      color: #ecf0f1
+
+@media screen and (min-width: 1024px)
+  .navbar.is-primary
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #2f4d6d
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #2f4d6d
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #2f4d6d
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #2f4d6d
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #2f4d6d
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #375a7f
+      color: #fff
+
+@media screen and (min-width: 1024px)
+  .navbar.is-link
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #17a689
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #17a689
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #17a689
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #17a689
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #17a689
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #1abc9c
+      color: #fff
+
+@media screen and (min-width: 1024px)
+  .navbar.is-info
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #118fe4
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #118fe4
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #118fe4
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #118fe4
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #118fe4
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #209cee
+      color: #fff
+
+@media screen and (min-width: 1024px)
+  .navbar.is-success
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #29b765
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #29b765
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #29b765
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #29b765
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #29b765
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #2ecc71
+      color: #fff
+
+@media screen and (min-width: 1024px)
+  .navbar.is-warning
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #d9a50d
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #d9a50d
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #d9a50d
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #d9a50d
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #d9a50d
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #f1b70e
+      color: #fff
+
+@media screen and (min-width: 1024px)
+  .navbar.is-danger
+    .navbar-end
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-start
+      .navbar-link, > .navbar-item
+        color: #fff
+    .navbar-end
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #e43725
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #e43725
+          color: #fff
+    .navbar-item.has-dropdown
+      &.is-active .navbar-link, &:hover .navbar-link
+        background-color: #e43725
+        color: #fff
+    .navbar-start
+      .navbar-link
+        &.is-active, &:hover
+          background-color: #e43725
+          color: #fff
+      > a.navbar-item
+        &.is-active, &:hover
+          background-color: #e43725
+          color: #fff
+    .navbar-end .navbar-link::after, .navbar-start .navbar-link::after
+      border-color: #fff
+    .navbar-dropdown a.navbar-item.is-active
+      background-color: #e74c3c
+      color: #fff
+
+html
+  &.has-navbar-fixed-top
+    padding-top: 4rem
+  &.has-navbar-fixed-bottom
+    padding-bottom: 4rem
+
+.navbar-brand
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  min-height: 4rem
+
+.navbar-tabs
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  min-height: 4rem
+  -webkit-overflow-scrolling: touch
+  max-width: 100vw
+  overflow-x: auto
+  overflow-y: hidden
+
+.navbar-burger
+  cursor: pointer
+  display: block
+  height: 4rem
+  position: relative
+  width: 4rem
+  margin-left: auto
+  span
+    background-color: currentColor
+    display: block
+    height: 1px
+    left: calc(50% - 8px)
+    position: absolute
+    -webkit-transform-origin: center
+    transform-origin: center
+    transition-duration: 86ms
+    transition-property: background-color,opacity,transform
+    transition-property: background-color,opacity,transform,-webkit-transform
+    transition-timing-function: ease-out
+    width: 16px
+    &:nth-child(1)
+      top: calc(50% - 6px)
+    &:nth-child(2)
+      top: calc(50% - 1px)
+    &:nth-child(3)
+      top: calc(50% + 4px)
+  &:hover
+    background-color: rgba(0, 0, 0, 0.05)
+  &.is-active span
+    &:nth-child(1)
+      -webkit-transform: translateY(5px) rotate(45deg)
+      transform: translateY(5px) rotate(45deg)
+    &:nth-child(2)
+      opacity: 0
+    &:nth-child(3)
+      -webkit-transform: translateY(-5px) rotate(-45deg)
+      transform: translateY(-5px) rotate(-45deg)
+
+.navbar-menu
+  display: none
+
+.navbar-item, .navbar-link
+  color: #fff
+  display: block
+  line-height: 1.5
+  padding: .5rem 1rem
+  position: relative
+
+a
+  &.navbar-item
+    &.is-active, &:hover
+      background-color: transparent
+      color: #1abc9c
+  &.navbar-link
+    &.is-active, &:hover
+      background-color: transparent
+      color: #1abc9c
+
+.navbar-item
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  img
+    max-height: 1.75rem
+  &.has-dropdown
+    padding: 0
+
+.navbar-content
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 1
+  flex-shrink: 1
+
+.navbar-item
+  &.is-expanded
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 1
+    flex-shrink: 1
+  &.is-tab
+    border-bottom: 1px solid transparent
+    min-height: 4rem
+    padding-bottom: calc(.5rem - 1px)
+    &.is-active, &:hover
+      background-color: transparent
+      border-bottom-color: #1abc9c
+    &.is-active
+      border-bottom-style: solid
+      border-bottom-width: 3px
+      color: #1abc9c
+      padding-bottom: calc(.5rem - 3px)
+
+.navbar-link
+  padding-right: 2.5em
+
+.navbar-dropdown
+  font-size: .875rem
+  padding-bottom: .5rem
+  padding-top: .5rem
+  .navbar-item
+    padding-left: 1.5rem
+    padding-right: 1.5rem
+
+.navbar-divider
+  background-color: rgba(0, 0, 0, 0.2)
+  border: 0
+  display: none
+  height: 1px
+  margin: .5rem 0
+
+@media screen and (max-width: 1023px)
+  .navbar > .container
+    display: block
+  .navbar-brand .navbar-item, .navbar-tabs .navbar-item
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  .navbar-menu
+    background-color: #fff
+    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1)
+    padding: .5rem 0
+    &.is-active
+      display: block
+  .navbar
+    &.is-fixed-bottom-touch, &.is-fixed-top-touch
+      left: 0
+      position: fixed
+      right: 0
+      z-index: 30
+    &.is-fixed-bottom-touch
+      bottom: 0
+      &.has-shadow
+        box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1)
+    &.is-fixed-top-touch
+      top: 0
+    &.is-fixed-top .navbar-menu, &.is-fixed-top-touch .navbar-menu
+      -webkit-overflow-scrolling: touch
+      max-height: calc(100vh - 4rem)
+      overflow: auto
+  html
+    &.has-navbar-fixed-top-touch
+      padding-top: 4rem
+    &.has-navbar-fixed-bottom-touch
+      padding-bottom: 4rem
+
+@media screen and (min-width: 1024px)
+  .navbar, .navbar-end, .navbar-menu, .navbar-start
+    -webkit-box-align: stretch
+    -ms-flex-align: stretch
+    align-items: stretch
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  .navbar
+    min-height: 4rem
+    &.is-transparent
+      .navbar-item.has-dropdown
+        &.is-active .navbar-link, &.is-hoverable:hover .navbar-link
+          background-color: transparent !important
+      a
+        &.navbar-item
+          &.is-active, &:hover
+            background-color: transparent !important
+        &.navbar-link
+          &.is-active, &:hover
+            background-color: transparent !important
+  .navbar-dropdown a.navbar-item:hover, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover
+    background-color: transparent
+    color: #dbdee0
+  .navbar-dropdown a.navbar-item.is-active, .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active
+    background-color: transparent
+    color: #1abc9c
+  .navbar-burger
+    display: none
+  .navbar-item, .navbar-link
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  .navbar-item
+    &.has-dropdown
+      -webkit-box-align: stretch
+      -ms-flex-align: stretch
+      align-items: stretch
+    &.has-dropdown-up
+      .navbar-link::after
+        -webkit-transform: rotate(135deg) translate(0.25em, -0.25em)
+        transform: rotate(135deg) translate(0.25em, -0.25em)
+      .navbar-dropdown
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+        border-radius: 8px 8px 0 0
+        border-top: none
+        bottom: 100%
+        box-shadow: 0 -8px 8px rgba(10, 10, 10, 0.1)
+        top: auto
+    &.is-active .navbar-dropdown, &.is-hoverable:hover .navbar-dropdown
+      display: block
+    &.is-active .navbar-dropdown.is-boxed, &.is-hoverable:hover .navbar-dropdown.is-boxed
+      opacity: 1
+      pointer-events: auto
+      -webkit-transform: translateY(0)
+      transform: translateY(0)
+  .navbar-link::after
+    border: 1px solid #fff
+    border-right: 0
+    border-top: 0
+    content: " "
+    display: block
+    height: .5em
+    pointer-events: none
+    position: absolute
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    -webkit-transform-origin: center
+    transform-origin: center
+    width: .5em
+    margin-top: -.375em
+    right: 1.125em
+    top: 50%
+  .navbar-menu
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 0
+    flex-shrink: 0
+  .navbar-start
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    margin-right: auto
+  .navbar-end
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+    margin-left: auto
+  .navbar-dropdown
+    background-color: #375a7f
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 8px
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+    box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1)
+    display: none
+    font-size: .875rem
+    left: 0
+    min-width: 100%
+    position: absolute
+    top: 100%
+    z-index: 20
+    .navbar-item
+      padding: .375rem 1rem
+      white-space: nowrap
+    a.navbar-item
+      padding-right: 3rem
+    &.is-boxed
+      border-radius: 8px
+      border-top: none
+      box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+      display: block
+      opacity: 0
+      pointer-events: none
+      top: calc(100% + (-4px))
+      -webkit-transform: translateY(-5px)
+      transform: translateY(-5px)
+      transition-duration: 86ms
+      transition-property: opacity,transform
+      transition-property: opacity,transform,-webkit-transform
+    &.is-right
+      left: auto
+      right: 0
+  .navbar-divider
+    display: block
+  .container > .navbar .navbar-brand, .navbar > .container .navbar-brand
+    margin-left: -1rem
+  .container > .navbar .navbar-menu
+    margin-right: -1rem
+  .navbar
+    > .container .navbar-menu
+      margin-right: -1rem
+    &.is-fixed-bottom-desktop, &.is-fixed-top-desktop
+      left: 0
+      position: fixed
+      right: 0
+      z-index: 30
+    &.is-fixed-bottom-desktop
+      bottom: 0
+      &.has-shadow
+        box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1)
+    &.is-fixed-top-desktop
+      top: 0
+  html
+    &.has-navbar-fixed-top-desktop
+      padding-top: 4rem
+    &.has-navbar-fixed-bottom-desktop
+      padding-bottom: 4rem
+  a
+    &.navbar-item.is-active, &.navbar-link.is-active
+      color: #1abc9c
+    &.navbar-item.is-active:not(:hover), &.navbar-link.is-active:not(:hover)
+      background-color: transparent
+  .navbar-item.has-dropdown
+    &.is-active .navbar-link, &:hover .navbar-link
+      background-color: transparent
+
+.pagination
+  font-size: 15px
+  margin: -.25rem
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  text-align: center
+
+.pagination-ellipsis, .pagination-link, .pagination-list, .pagination-next, .pagination-previous
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  text-align: center
+
+.pagination, .pagination-list
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+.pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous
+  -moz-appearance: none
+  -webkit-appearance: none
+  border: 1px solid transparent
+  border-radius: .4em
+  box-shadow: none
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  line-height: 1.5
+  padding: calc(.375em - 1px) calc(.625em - 1px)
+  position: relative
+  vertical-align: top
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  font-size: 1em
+  margin: .25rem
+
+.pagination-ellipsis, .pagination-link
+  padding-left: .5em
+  padding-right: .5em
+
+.pagination-ellipsis
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.pagination-link
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.pagination-next
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.pagination-previous
+  &.is-active, &.is-focused, &:active, &:focus
+    outline: 0
+
+.pagination-ellipsis[disabled], .pagination-link[disabled], .pagination-next[disabled], .pagination-previous[disabled]
+  cursor: not-allowed
+
+.pagination-link, .pagination-next, .pagination-previous
+  border-color: #5e6d6f
+  min-width: 2.25em
+
+.pagination-link:hover, .pagination-next:hover, .pagination-previous:hover
+  border-color: #8c9b9d
+  color: #1dd2af
+
+.pagination-link:focus, .pagination-next:focus, .pagination-previous:focus
+  border-color: #8c9b9d
+
+.pagination-link:active, .pagination-next:active, .pagination-previous:active
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2)
+
+.pagination-link[disabled], .pagination-next[disabled], .pagination-previous[disabled]
+  background-color: #dbdee0
+  border-color: #dbdee0
+  box-shadow: none
+  color: #5e6d6f
+  opacity: .5
+
+.pagination-next, .pagination-previous
+  padding-left: .75em
+  padding-right: .75em
+  white-space: nowrap
+
+.pagination-link.is-current
+  background-color: #1abc9c
+  border-color: #1abc9c
+  color: #fff
+
+.pagination-ellipsis
+  color: #8c9b9d
+  pointer-events: none
+
+.pagination-list
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+@media screen and (max-width: 768px)
+  .pagination
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .pagination-list li, .pagination-next, .pagination-previous
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 1
+    flex-shrink: 1
+
+@media screen and (min-width: 769px), print
+  .pagination-list
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 1
+    flex-shrink: 1
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    -webkit-box-ordinal-group: 2
+    -ms-flex-order: 1
+    order: 1
+  .pagination-previous
+    -webkit-box-ordinal-group: 3
+    -ms-flex-order: 2
+    order: 2
+  .pagination-next
+    -webkit-box-ordinal-group: 4
+    -ms-flex-order: 3
+    order: 3
+  .pagination
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    &.is-centered
+      .pagination-previous
+        -webkit-box-ordinal-group: 2
+        -ms-flex-order: 1
+        order: 1
+      .pagination-list
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-ordinal-group: 3
+        -ms-flex-order: 2
+        order: 2
+      .pagination-next
+        -webkit-box-ordinal-group: 4
+        -ms-flex-order: 3
+        order: 3
+    &.is-right
+      .pagination-previous
+        -webkit-box-ordinal-group: 2
+        -ms-flex-order: 1
+        order: 1
+      .pagination-next
+        -webkit-box-ordinal-group: 3
+        -ms-flex-order: 2
+        order: 2
+      .pagination-list
+        -webkit-box-pack: end
+        -ms-flex-pack: end
+        justify-content: flex-end
+        -webkit-box-ordinal-group: 4
+        -ms-flex-order: 3
+        order: 3
+
+.panel
+  font-size: 15px
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+.panel-block, .panel-heading, .panel-tabs
+  border-bottom: 1px solid #5e6d6f
+  border-left: 1px solid #5e6d6f
+  border-right: 1px solid #5e6d6f
+
+.panel-block:first-child, .panel-heading:first-child, .panel-tabs:first-child
+  border-top: 1px solid #5e6d6f
+
+.panel-heading
+  background-color: #282f2f
+  border-radius: .4em .4em 0 0
+  color: #f2f2f2
+  font-size: 1.25em
+  line-height: 1.25
+  padding: .5em .75em
+
+.panel-block
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+.panel-tabs
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  font-size: .875em
+  -webkit-box-align: end
+  -ms-flex-align: end
+  align-items: flex-end
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  a
+    border-bottom: 1px solid #5e6d6f
+    padding: .5em
+    &.is-active
+      color: #17a689
+
+.panel-list a
+  color: #fff
+  &:hover
+    color: #1abc9c
+
+.panel-block
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  color: #f2f2f2
+  -webkit-box-pack: start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  padding: .5em .75em
+  input[type=checkbox]
+    margin-right: .75em
+
+.panel-icon
+  margin-right: .75em
+
+.panel-block
+  > .control
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 1
+    flex-shrink: 1
+    width: 100%
+  &.is-wrapped
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  &.is-active
+    border-left-color: #1abc9c
+    color: #17a689
+
+a.panel-block, label.panel-block
+  cursor: pointer
+
+a.panel-block:hover, label.panel-block:hover
+  background-color: #282f2f
+
+.panel-icon
+  display: inline-block
+  font-size: 14px
+  height: 1em
+  line-height: 1em
+  text-align: center
+  vertical-align: top
+  width: 1em
+  color: #fff
+  .fa
+    font-size: inherit
+    line-height: inherit
+
+.tabs
+  -webkit-overflow-scrolling: touch
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  font-size: 15px
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  overflow: hidden
+  overflow-x: auto
+  white-space: nowrap
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+  a, ul.is-center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  a, ul
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    border-bottom-color: #5e6d6f
+    border-bottom-style: solid
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  a
+    color: #fff
+    padding: .5em 1em
+    vertical-align: top
+    &:hover
+      border-bottom-color: #f2f2f2
+      color: #f2f2f2
+  li
+    display: block
+    &.is-active a
+      border-bottom-color: #1abc9c
+      color: #1abc9c
+  ul
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    -webkit-box-pack: start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    border-bottom-width: 2px
+    &.is-center, &.is-left
+      padding-right: .75em
+    &.is-center
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      padding-left: .75em
+    &.is-right
+      -webkit-box-pack: end
+      -ms-flex-pack: end
+      justify-content: flex-end
+      padding-left: .75em
+  .icon
+    &:first-child
+      margin-right: .5em
+    &:last-child
+      margin-left: .5em
+  &.is-centered ul
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  &.is-right ul
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+  &.is-boxed
+    a
+      border: 1px solid transparent
+      border-radius: .4em .4em 0 0
+      &:hover
+        background-color: #282f2f
+        border-bottom-color: #5e6d6f
+    li.is-active a
+      border-color: #5e6d6f
+      border-bottom-color: transparent !important
+  &.is-toggle
+    a
+      border-color: #5e6d6f
+      border-style: solid
+      border-width: 1px
+      margin-bottom: 0
+      position: relative
+      &:hover
+        background-color: #282f2f
+        border-color: #8c9b9d
+        z-index: 2
+    li
+      + li
+        margin-left: -2px
+      &:first-child a
+        border-radius: .4em 0 0 .4em
+      &:last-child a
+        border-radius: 0 .4em .4em 0
+      &.is-active a
+        background-color: #1abc9c
+        border-color: #1abc9c
+        color: #fff
+        z-index: 1
+
+.hero .tabs ul
+  border-bottom: none
+
+.tabs
+  &.is-toggle ul
+    border-bottom: none
+  &.is-small
+    font-size: .85em
+  &.is-medium
+    font-size: 1.25rem
+  &.is-large
+    font-size: 1.5rem
+
+.column
+  display: block
+  -ms-flex-preferred-size: 0
+  flex-basis: 0
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 1
+  flex-shrink: 1
+  padding: .75rem
+
+.columns
+  &.is-mobile > .column
+    &.is-full, &.is-narrow
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full
+      width: 100%
+    &.is-three-quarters
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-half, &.is-two-thirds
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half
+      width: 50%
+    &.is-one-quarter, &.is-one-third
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter
+      width: 25%
+    &.is-one-fifth
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+      width: 40%
+    &.is-four-fifths, &.is-three-fifths
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths
+      width: 80%
+    &.is-offset-three-quarters
+      margin-left: 75%
+    &.is-offset-two-thirds
+      margin-left: 66.6666%
+    &.is-offset-half
+      margin-left: 50%
+    &.is-offset-one-third
+      margin-left: 33.3333%
+    &.is-offset-one-quarter
+      margin-left: 25%
+    &.is-offset-one-fifth
+      margin-left: 20%
+    &.is-offset-two-fifths
+      margin-left: 40%
+    &.is-offset-three-fifths
+      margin-left: 60%
+    &.is-offset-four-fifths
+      margin-left: 80%
+    &.is-1
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1
+      margin-left: 8.33333%
+    &.is-2
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2
+      margin-left: 16.66667%
+    &.is-3
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3
+      margin-left: 25%
+    &.is-4
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4
+      margin-left: 33.33333%
+    &.is-5
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5
+      margin-left: 41.66667%
+    &.is-6
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6
+      margin-left: 50%
+    &.is-7
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7
+      margin-left: 58.33333%
+    &.is-8
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8
+      margin-left: 66.66667%
+    &.is-9
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9
+      margin-left: 75%
+    &.is-10
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10
+      margin-left: 83.33333%
+    &.is-11
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11
+      margin-left: 91.66667%
+    &.is-12
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12
+      margin-left: 100%
+  margin-left: -.75rem
+  margin-right: -.75rem
+  margin-top: -.75rem
+  &:last-child
+    margin-bottom: -.75rem
+  &:not(:last-child)
+    margin-bottom: calc(1.5rem - .75rem)
+  &.is-centered
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  &.is-gapless
+    margin-left: 0
+    margin-right: 0
+    margin-top: 0
+    > .column
+      margin: 0
+      padding: 0 !important
+    &:not(:last-child)
+      margin-bottom: 1.5rem
+    &:last-child
+      margin-bottom: 0
+  &.is-mobile
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  &.is-multiline
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  &.is-vcentered
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+  &.is-variable
+    --columnGap: 0.75rem
+    margin-left: calc(-1*var(--columnGap))
+    margin-right: calc(-1*var(--columnGap))
+    .column
+      padding-left: var(--columnGap)
+      padding-right: var(--columnGap)
+    &.is-0
+      --columnGap: 0rem
+    &.is-1
+      --columnGap: 0.25rem
+    &.is-2
+      --columnGap: 0.5rem
+    &.is-3
+      --columnGap: 0.75rem
+    &.is-4
+      --columnGap: 1rem
+    &.is-5
+      --columnGap: 1.25rem
+    &.is-6
+      --columnGap: 1.5rem
+    &.is-7
+      --columnGap: 1.75rem
+    &.is-8
+      --columnGap: 2rem
+
+@media screen and (max-width: 768px)
+  .column
+    &.is-narrow-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-three-quarters-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+      width: 75%
+    &.is-half-mobile, &.is-two-thirds-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half-mobile
+      width: 50%
+    &.is-one-quarter-mobile, &.is-one-third-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-mobile
+      width: 25%
+    &.is-one-fifth-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+      width: 40%
+    &.is-four-fifths-mobile, &.is-three-fifths-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths-mobile
+      width: 80%
+    &.is-offset-three-quarters-mobile
+      margin-left: 75%
+    &.is-offset-two-thirds-mobile
+      margin-left: 66.6666%
+    &.is-offset-half-mobile
+      margin-left: 50%
+    &.is-offset-one-third-mobile
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-mobile
+      margin-left: 25%
+    &.is-offset-one-fifth-mobile
+      margin-left: 20%
+    &.is-offset-two-fifths-mobile
+      margin-left: 40%
+    &.is-offset-three-fifths-mobile
+      margin-left: 60%
+    &.is-offset-four-fifths-mobile
+      margin-left: 80%
+    &.is-1-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1-mobile
+      margin-left: 8.33333%
+    &.is-2-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2-mobile
+      margin-left: 16.66667%
+    &.is-3-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3-mobile
+      margin-left: 25%
+    &.is-4-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4-mobile
+      margin-left: 33.33333%
+    &.is-5-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5-mobile
+      margin-left: 41.66667%
+    &.is-6-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6-mobile
+      margin-left: 50%
+    &.is-7-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7-mobile
+      margin-left: 58.33333%
+    &.is-8-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8-mobile
+      margin-left: 66.66667%
+    &.is-9-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9-mobile
+      margin-left: 75%
+    &.is-10-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10-mobile
+      margin-left: 83.33333%
+    &.is-11-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11-mobile
+      margin-left: 91.66667%
+    &.is-12-mobile
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12-mobile
+      margin-left: 100%
+
+@media screen and (min-width: 769px), print
+  .column
+    &.is-full, &.is-full-tablet, &.is-narrow, &.is-narrow-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full, &.is-full-tablet
+      width: 100%
+    &.is-three-quarters, &.is-three-quarters-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-half, &.is-half-tablet, &.is-two-thirds, &.is-two-thirds-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half, &.is-half-tablet
+      width: 50%
+    &.is-one-third, &.is-one-third-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter, &.is-one-quarter-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-one-fifth, &.is-one-fifth-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths, &.is-two-fifths-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 40%
+    &.is-three-fifths, &.is-three-fifths-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths, &.is-four-fifths-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 80%
+    &.is-offset-three-quarters, &.is-offset-three-quarters-tablet
+      margin-left: 75%
+    &.is-offset-two-thirds, &.is-offset-two-thirds-tablet
+      margin-left: 66.6666%
+    &.is-offset-half, &.is-offset-half-tablet
+      margin-left: 50%
+    &.is-offset-one-third, &.is-offset-one-third-tablet
+      margin-left: 33.3333%
+    &.is-offset-one-quarter, &.is-offset-one-quarter-tablet
+      margin-left: 25%
+    &.is-offset-one-fifth, &.is-offset-one-fifth-tablet
+      margin-left: 20%
+    &.is-offset-two-fifths, &.is-offset-two-fifths-tablet
+      margin-left: 40%
+    &.is-offset-three-fifths, &.is-offset-three-fifths-tablet
+      margin-left: 60%
+    &.is-offset-four-fifths, &.is-offset-four-fifths-tablet
+      margin-left: 80%
+    &.is-1, &.is-1-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1, &.is-offset-1-tablet
+      margin-left: 8.33333%
+    &.is-2, &.is-2-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2, &.is-offset-2-tablet
+      margin-left: 16.66667%
+    &.is-3, &.is-3-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3, &.is-offset-3-tablet
+      margin-left: 25%
+    &.is-4, &.is-4-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4, &.is-offset-4-tablet
+      margin-left: 33.33333%
+    &.is-5, &.is-5-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5, &.is-offset-5-tablet
+      margin-left: 41.66667%
+    &.is-6, &.is-6-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6, &.is-offset-6-tablet
+      margin-left: 50%
+    &.is-7, &.is-7-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7, &.is-offset-7-tablet
+      margin-left: 58.33333%
+    &.is-8, &.is-8-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8, &.is-offset-8-tablet
+      margin-left: 66.66667%
+    &.is-9, &.is-9-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9, &.is-offset-9-tablet
+      margin-left: 75%
+    &.is-10, &.is-10-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10, &.is-offset-10-tablet
+      margin-left: 83.33333%
+    &.is-11, &.is-11-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11, &.is-offset-11-tablet
+      margin-left: 91.66667%
+    &.is-12, &.is-12-tablet
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12, &.is-offset-12-tablet
+      margin-left: 100%
+
+@media screen and (max-width: 1023px)
+  .column
+    &.is-narrow-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-three-quarters-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+      width: 75%
+    &.is-half-touch, &.is-two-thirds-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half-touch
+      width: 50%
+    &.is-one-quarter-touch, &.is-one-third-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-touch
+      width: 25%
+    &.is-one-fifth-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+      width: 40%
+    &.is-four-fifths-touch, &.is-three-fifths-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths-touch
+      width: 80%
+    &.is-offset-three-quarters-touch
+      margin-left: 75%
+    &.is-offset-two-thirds-touch
+      margin-left: 66.6666%
+    &.is-offset-half-touch
+      margin-left: 50%
+    &.is-offset-one-third-touch
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-touch
+      margin-left: 25%
+    &.is-offset-one-fifth-touch
+      margin-left: 20%
+    &.is-offset-two-fifths-touch
+      margin-left: 40%
+    &.is-offset-three-fifths-touch
+      margin-left: 60%
+    &.is-offset-four-fifths-touch
+      margin-left: 80%
+    &.is-1-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1-touch
+      margin-left: 8.33333%
+    &.is-2-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2-touch
+      margin-left: 16.66667%
+    &.is-3-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3-touch
+      margin-left: 25%
+    &.is-4-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4-touch
+      margin-left: 33.33333%
+    &.is-5-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5-touch
+      margin-left: 41.66667%
+    &.is-6-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6-touch
+      margin-left: 50%
+    &.is-7-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7-touch
+      margin-left: 58.33333%
+    &.is-8-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8-touch
+      margin-left: 66.66667%
+    &.is-9-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9-touch
+      margin-left: 75%
+    &.is-10-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10-touch
+      margin-left: 83.33333%
+    &.is-11-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11-touch
+      margin-left: 91.66667%
+    &.is-12-touch
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12-touch
+      margin-left: 100%
+
+@media screen and (min-width: 1024px)
+  .column
+    &.is-narrow-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-three-quarters-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+      width: 75%
+    &.is-half-desktop, &.is-two-thirds-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half-desktop
+      width: 50%
+    &.is-one-quarter-desktop, &.is-one-third-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-desktop
+      width: 25%
+    &.is-one-fifth-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+      width: 40%
+    &.is-four-fifths-desktop, &.is-three-fifths-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths-desktop
+      width: 80%
+    &.is-offset-three-quarters-desktop
+      margin-left: 75%
+    &.is-offset-two-thirds-desktop
+      margin-left: 66.6666%
+    &.is-offset-half-desktop
+      margin-left: 50%
+    &.is-offset-one-third-desktop
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-desktop
+      margin-left: 25%
+    &.is-offset-one-fifth-desktop
+      margin-left: 20%
+    &.is-offset-two-fifths-desktop
+      margin-left: 40%
+    &.is-offset-three-fifths-desktop
+      margin-left: 60%
+    &.is-offset-four-fifths-desktop
+      margin-left: 80%
+    &.is-1-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1-desktop
+      margin-left: 8.33333%
+    &.is-2-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2-desktop
+      margin-left: 16.66667%
+    &.is-3-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3-desktop
+      margin-left: 25%
+    &.is-4-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4-desktop
+      margin-left: 33.33333%
+    &.is-5-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5-desktop
+      margin-left: 41.66667%
+    &.is-6-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6-desktop
+      margin-left: 50%
+    &.is-7-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7-desktop
+      margin-left: 58.33333%
+    &.is-8-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8-desktop
+      margin-left: 66.66667%
+    &.is-9-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9-desktop
+      margin-left: 75%
+    &.is-10-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10-desktop
+      margin-left: 83.33333%
+    &.is-11-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11-desktop
+      margin-left: 91.66667%
+    &.is-12-desktop
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12-desktop
+      margin-left: 100%
+
+@media screen and (min-width: 1216px)
+  .column
+    &.is-narrow-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-three-quarters-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+      width: 75%
+    &.is-half-widescreen, &.is-two-thirds-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half-widescreen
+      width: 50%
+    &.is-one-quarter-widescreen, &.is-one-third-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-widescreen
+      width: 25%
+    &.is-one-fifth-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+      width: 40%
+    &.is-four-fifths-widescreen, &.is-three-fifths-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths-widescreen
+      width: 80%
+    &.is-offset-three-quarters-widescreen
+      margin-left: 75%
+    &.is-offset-two-thirds-widescreen
+      margin-left: 66.6666%
+    &.is-offset-half-widescreen
+      margin-left: 50%
+    &.is-offset-one-third-widescreen
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-widescreen
+      margin-left: 25%
+    &.is-offset-one-fifth-widescreen
+      margin-left: 20%
+    &.is-offset-two-fifths-widescreen
+      margin-left: 40%
+    &.is-offset-three-fifths-widescreen
+      margin-left: 60%
+    &.is-offset-four-fifths-widescreen
+      margin-left: 80%
+    &.is-1-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1-widescreen
+      margin-left: 8.33333%
+    &.is-2-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2-widescreen
+      margin-left: 16.66667%
+    &.is-3-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3-widescreen
+      margin-left: 25%
+    &.is-4-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4-widescreen
+      margin-left: 33.33333%
+    &.is-5-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5-widescreen
+      margin-left: 41.66667%
+    &.is-6-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6-widescreen
+      margin-left: 50%
+    &.is-7-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7-widescreen
+      margin-left: 58.33333%
+    &.is-8-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8-widescreen
+      margin-left: 66.66667%
+    &.is-9-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9-widescreen
+      margin-left: 75%
+    &.is-10-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10-widescreen
+      margin-left: 83.33333%
+    &.is-11-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11-widescreen
+      margin-left: 91.66667%
+    &.is-12-widescreen
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12-widescreen
+      margin-left: 100%
+
+@media screen and (min-width: 1408px)
+  .column
+    &.is-narrow-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+    &.is-full-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-three-quarters-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+      width: 75%
+    &.is-half-fullhd, &.is-two-thirds-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.6666%
+    &.is-half-fullhd
+      width: 50%
+    &.is-one-quarter-fullhd, &.is-one-third-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.3333%
+    &.is-one-quarter-fullhd
+      width: 25%
+    &.is-one-fifth-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+    &.is-two-fifths-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 20%
+      width: 40%
+    &.is-four-fifths-fullhd, &.is-three-fifths-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 60%
+    &.is-four-fifths-fullhd
+      width: 80%
+    &.is-offset-three-quarters-fullhd
+      margin-left: 75%
+    &.is-offset-two-thirds-fullhd
+      margin-left: 66.6666%
+    &.is-offset-half-fullhd
+      margin-left: 50%
+    &.is-offset-one-third-fullhd
+      margin-left: 33.3333%
+    &.is-offset-one-quarter-fullhd
+      margin-left: 25%
+    &.is-offset-one-fifth-fullhd
+      margin-left: 20%
+    &.is-offset-two-fifths-fullhd
+      margin-left: 40%
+    &.is-offset-three-fifths-fullhd
+      margin-left: 60%
+    &.is-offset-four-fifths-fullhd
+      margin-left: 80%
+    &.is-1-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-offset-1-fullhd
+      margin-left: 8.33333%
+    &.is-2-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 16.66667%
+    &.is-offset-2-fullhd
+      margin-left: 16.66667%
+    &.is-3-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 25%
+    &.is-offset-3-fullhd
+      margin-left: 25%
+    &.is-4-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 33.33333%
+    &.is-offset-4-fullhd
+      margin-left: 33.33333%
+    &.is-5-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-offset-5-fullhd
+      margin-left: 41.66667%
+    &.is-6-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 50%
+    &.is-offset-6-fullhd
+      margin-left: 50%
+    &.is-7-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 58.33333%
+    &.is-offset-7-fullhd
+      margin-left: 58.33333%
+    &.is-8-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 66.66667%
+    &.is-offset-8-fullhd
+      margin-left: 66.66667%
+    &.is-9-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-offset-9-fullhd
+      margin-left: 75%
+    &.is-10-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 83.33333%
+    &.is-offset-10-fullhd
+      margin-left: 83.33333%
+    &.is-11-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 91.66667%
+    &.is-offset-11-fullhd
+      margin-left: 91.66667%
+    &.is-12-fullhd
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+    &.is-offset-12-fullhd
+      margin-left: 100%
+
+@media screen and (min-width: 769px), print
+  .columns:not(.is-desktop)
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+@media screen and (min-width: 1024px)
+  .columns.is-desktop
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.tile
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: block
+  -ms-flex-preferred-size: 0
+  flex-basis: 0
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 1
+  flex-shrink: 1
+  min-height: -webkit-min-content
+  min-height: -moz-min-content
+  min-height: min-content
+  &.is-ancestor
+    margin-left: -.75rem
+    margin-right: -.75rem
+    margin-top: -.75rem
+    &:last-child
+      margin-bottom: -.75rem
+    &:not(:last-child)
+      margin-bottom: .75rem
+  &.is-child
+    margin: 0 !important
+  &.is-parent
+    padding: .75rem
+  &.is-vertical
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    > .tile.is-child:not(:last-child)
+      margin-bottom: 1.5rem !important
+
+@media screen and (min-width: 769px), print
+  .tile
+    &:not(.is-child)
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+    &.is-1, &.is-2, &.is-3, &.is-4
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 8.33333%
+    &.is-2, &.is-3, &.is-4
+      width: 16.66667%
+    &.is-3
+      width: 25%
+    &.is-4
+      width: 25%
+      width: 33.33333%
+    &.is-5, &.is-6, &.is-7, &.is-8
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 41.66667%
+    &.is-6, &.is-7, &.is-8
+      width: 50%
+    &.is-7
+      width: 58.33333%
+    &.is-8
+      width: 58.33333%
+      width: 66.66667%
+    &.is-10, &.is-11, &.is-12, &.is-9
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 75%
+    &.is-10, &.is-11, &.is-12
+      width: 83.33333%
+    &.is-11
+      width: 91.66667%
+    &.is-12
+      width: 91.66667%
+      width: 100%
+
+.hero
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  .navbar
+    background: 0 0
+  &.is-white
+    background-color: #fff
+    color: #0a0a0a
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #0a0a0a
+    .subtitle
+      color: rgba(10, 10, 10, 0.9)
+      a:not(.button), strong
+        color: #0a0a0a
+    .navbar-item
+      color: rgba(10, 10, 10, 0.7)
+    .navbar-link
+      color: rgba(10, 10, 10, 0.7)
+      &.is-active, &:hover
+        background-color: #f2f2f2
+        color: #0a0a0a
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #f2f2f2
+        color: #0a0a0a
+    .tabs
+      a
+        color: #0a0a0a
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #0a0a0a
+  &.is-black .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-danger .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-dark .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-info .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-light .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-link .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-primary .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-success .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-warning .tabs
+    &.is-boxed a:hover, &.is-toggle a:hover
+      background-color: rgba(10, 10, 10, 0.1)
+  &.is-white
+    .tabs
+      &.is-boxed a:hover, &.is-toggle a:hover
+        background-color: rgba(10, 10, 10, 0.1)
+    &.is-bold
+      background-image: linear-gradient(141deg, #e6e6e6 0%, #fff 71%, #fff 100%)
+  &.is-black
+    background-color: #0a0a0a
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #000
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #000
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #0a0a0a
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #0a0a0a
+    &.is-bold
+      background-image: linear-gradient(141deg, #000 0%, #0a0a0a 71%, #181616 100%)
+  &.is-light
+    background-color: #ecf0f1
+    color: #282f2f
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #282f2f
+    .subtitle
+      color: rgba(40, 47, 47, 0.9)
+      a:not(.button), strong
+        color: #282f2f
+    .navbar-item
+      color: rgba(40, 47, 47, 0.7)
+    .navbar-link
+      color: rgba(40, 47, 47, 0.7)
+      &.is-active, &:hover
+        background-color: #dde4e6
+        color: #282f2f
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #dde4e6
+        color: #282f2f
+    .tabs
+      a
+        color: #282f2f
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #282f2f
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #282f2f
+        border-color: #282f2f
+        color: #ecf0f1
+        &:hover
+          background-color: #282f2f
+          border-color: #282f2f
+          color: #ecf0f1
+    &.is-bold
+      background-image: linear-gradient(141deg, #cadfe0 0%, #ecf0f1 71%, #fafbfc 100%)
+  &.is-dark
+    background-color: #282f2f
+    color: #ecf0f1
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #ecf0f1
+    .subtitle
+      color: rgba(236, 240, 241, 0.9)
+      a:not(.button), strong
+        color: #ecf0f1
+    .navbar-item
+      color: rgba(236, 240, 241, 0.7)
+    .navbar-link
+      color: rgba(236, 240, 241, 0.7)
+      &.is-active, &:hover
+        background-color: #1d2122
+        color: #ecf0f1
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #1d2122
+        color: #ecf0f1
+    .tabs
+      a
+        color: #ecf0f1
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #ecf0f1
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #ecf0f1
+        border-color: #ecf0f1
+        color: #282f2f
+        &:hover
+          background-color: #ecf0f1
+          border-color: #ecf0f1
+          color: #282f2f
+    &.is-bold
+      background-image: linear-gradient(141deg, #0f1615 0%, #282f2f 71%, #313c40 100%)
+  &.is-primary
+    background-color: #375a7f
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #2f4d6d
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #2f4d6d
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #375a7f
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #375a7f
+    &.is-bold
+      background-image: linear-gradient(141deg, #214b62 0%, #375a7f 71%, #3a5796 100%)
+  &.is-link
+    background-color: #1abc9c
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #17a689
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #17a689
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #1abc9c
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #1abc9c
+    &.is-bold
+      background-image: linear-gradient(141deg, #0c9764 0%, #1abc9c 71%, #17d8d2 100%)
+  &.is-info
+    background-color: #209cee
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #118fe4
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #118fe4
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #209cee
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #209cee
+    &.is-bold
+      background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%)
+  &.is-success
+    background-color: #2ecc71
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #29b765
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #29b765
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #2ecc71
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #2ecc71
+    &.is-bold
+      background-image: linear-gradient(141deg, #1bac40 0%, #2ecc71 71%, #3ada98 100%)
+  &.is-warning
+    background-color: #f1b70e
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #d9a50d
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #d9a50d
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #f1b70e
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #f1b70e
+    &.is-bold
+      background-image: linear-gradient(141deg, #cb7601 0%, #f1b70e 71%, #f8e520 100%)
+  &.is-danger
+    background-color: #e74c3c
+    color: #fff
+    a:not(.button), strong
+      color: inherit
+    .title
+      color: #fff
+    .subtitle
+      color: rgba(255, 255, 255, 0.9)
+      a:not(.button), strong
+        color: #fff
+    .navbar-item
+      color: rgba(255, 255, 255, 0.7)
+    .navbar-link
+      color: rgba(255, 255, 255, 0.7)
+      &.is-active, &:hover
+        background-color: #e43725
+        color: #fff
+    a.navbar-item
+      &.is-active, &:hover
+        background-color: #e43725
+        color: #fff
+    .tabs
+      a
+        color: #fff
+        opacity: .9
+        &:hover
+          opacity: 1
+      li.is-active a
+        opacity: 1
+      &.is-boxed a, &.is-toggle a
+        color: #fff
+      &.is-boxed li.is-active a, &.is-toggle li.is-active a
+        background-color: #fff
+        border-color: #fff
+        color: #e74c3c
+        &:hover
+          background-color: #fff
+          border-color: #fff
+          color: #e74c3c
+    &.is-bold
+      background-image: linear-gradient(141deg, #e20e1e 0%, #e74c3c 71%, #ef784e 100%)
+  &.is-small .hero-body
+    padding-bottom: 1.5rem
+    padding-top: 1.5rem
+  &.is-fullheight .hero-body, &.is-halfheight .hero-body
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  &.is-fullheight .hero-body > .container
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-negative: 1
+    flex-shrink: 1
+  &.is-halfheight
+    .hero-body > .container
+      -webkit-box-flex: 1
+      -ms-flex-positive: 1
+      flex-grow: 1
+      -ms-flex-negative: 1
+      flex-shrink: 1
+    min-height: 50vh
+  &.is-fullheight
+    min-height: 100vh
+
+@media screen and (max-width: 1023px)
+  .hero.is-white .navbar-menu
+    background-color: #fff
+
+@media screen and (max-width: 768px)
+  .hero.is-white.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #e6e6e6 0%, #fff 71%, #fff 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-black .navbar-menu
+    background-color: #0a0a0a
+
+@media screen and (max-width: 768px)
+  .hero.is-black.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #000 0%, #0a0a0a 71%, #181616 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-light .navbar-menu
+    background-color: #ecf0f1
+
+@media screen and (max-width: 768px)
+  .hero.is-light.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #cadfe0 0%, #ecf0f1 71%, #fafbfc 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-dark .navbar-menu
+    background-color: #282f2f
+
+@media screen and (max-width: 768px)
+  .hero.is-dark.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #0f1615 0%, #282f2f 71%, #313c40 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-primary .navbar-menu
+    background-color: #375a7f
+
+@media screen and (max-width: 768px)
+  .hero.is-primary.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #214b62 0%, #375a7f 71%, #3a5796 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-link .navbar-menu
+    background-color: #1abc9c
+
+@media screen and (max-width: 768px)
+  .hero.is-link.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #0c9764 0%, #1abc9c 71%, #17d8d2 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-info .navbar-menu
+    background-color: #209cee
+
+@media screen and (max-width: 768px)
+  .hero.is-info.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-success .navbar-menu
+    background-color: #2ecc71
+
+@media screen and (max-width: 768px)
+  .hero.is-success.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #1bac40 0%, #2ecc71 71%, #3ada98 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-warning .navbar-menu
+    background-color: #f1b70e
+
+@media screen and (max-width: 768px)
+  .hero.is-warning.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #cb7601 0%, #f1b70e 71%, #f8e520 100%)
+
+@media screen and (max-width: 1023px)
+  .hero.is-danger .navbar-menu
+    background-color: #e74c3c
+
+@media screen and (max-width: 768px)
+  .hero.is-danger.is-bold .navbar-menu
+    background-image: linear-gradient(141deg, #e20e1e 0%, #e74c3c 71%, #ef784e 100%)
+
+@media screen and (min-width: 769px), print
+  .hero
+    &.is-medium .hero-body
+      padding-bottom: 9rem
+      padding-top: 9rem
+    &.is-large .hero-body
+      padding-bottom: 18rem
+      padding-top: 18rem
+
+.hero-video
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  overflow: hidden
+  video
+    left: 50%
+    min-height: 100%
+    min-width: 100%
+    position: absolute
+    top: 50%
+    -webkit-transform: translate3d(-50%, -50%, 0)
+    transform: translate3d(-50%, -50%, 0)
+  &.is-transparent
+    opacity: .3
+
+@media screen and (max-width: 768px)
+  .hero-video
+    display: none
+
+.hero-buttons
+  margin-top: 1.5rem
+
+@media screen and (max-width: 768px)
+  .hero-buttons .button
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    &:not(:last-child)
+      margin-bottom: .75rem
+
+@media screen and (min-width: 769px), print
+  .hero-buttons
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    .button:not(:last-child)
+      margin-right: 1.5rem
+
+.hero-body, .hero-foot, .hero-head
+  -webkit-box-flex: 0
+  -ms-flex-positive: 0
+  flex-grow: 0
+  -ms-flex-negative: 0
+  flex-shrink: 0
+
+.hero-body
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  padding: 3rem 1.5rem
+
+.section
+  padding: 3rem 1.5rem
+
+@media screen and (min-width: 1024px)
+  .section
+    &.is-medium
+      padding: 9rem 1.5rem
+    &.is-large
+      padding: 18rem 1.5rem
+
+.footer
+  background-color: #282f2f
+  padding: 3rem 1.5rem 6rem
+
+h6
+  text-transform: uppercase
+  letter-spacing: .5px
+
+.box, .hero
+  background-color: #343c3d
+
+.box
+  box-shadow: none
+
+.button
+  transition: all 200ms ease
+  border-width: 2px
+  color: #fff
+  &.is-active, &.is-focused, &:active, &:focus
+    box-shadow: 0 0 0 2px rgba(140, 155, 157, 0.5)
+  &.is-white
+    &.is-hovered, &:hover
+      background-color: #fff
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #fff
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5)
+  &.is-black
+    &.is-hovered, &:hover
+      background-color: #1d1d1d
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #0a0a0a
+      box-shadow: 0 0 0 2px rgba(10, 10, 10, 0.5)
+  &.is-light
+    &.is-hovered, &:hover
+      background-color: #fff
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #ecf0f1
+      box-shadow: 0 0 0 2px rgba(236, 240, 241, 0.5)
+  &.is-dark
+    &.is-hovered, &:hover
+      background-color: #3a4344
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #282f2f
+      box-shadow: 0 0 0 2px rgba(40, 47, 47, 0.5)
+  &.is-primary
+    &.is-hovered, &:hover
+      background-color: #436d9a
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #375a7f
+      box-shadow: 0 0 0 2px rgba(55, 90, 127, 0.5)
+  &.is-link
+    &.is-hovered, &:hover
+      background-color: #1fdeb8
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #1abc9c
+      box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.5)
+  &.is-info
+    &.is-hovered, &:hover
+      background-color: #44acf1
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #209cee
+      box-shadow: 0 0 0 2px rgba(32, 156, 238, 0.5)
+  &.is-success
+    &.is-hovered, &:hover
+      background-color: #4ad685
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #2ecc71
+      box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.5)
+  &.is-warning
+    &.is-hovered, &:hover
+      background-color: #f3c232
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #f1b70e
+      box-shadow: 0 0 0 2px rgba(241, 183, 14, 0.5)
+  &.is-danger
+    &.is-hovered, &:hover
+      background-color: #eb6b5e
+    &.is-active, &.is-focused, &:active, &:focus
+      border-color: #e74c3c
+      box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5)
+
+.label
+  color: #dbdee0
+
+.button
+  height: 2.5em
+
+.control
+  &.has-icons-left .icon, &.has-icons-right .icon
+    height: 2.5em
+
+.input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous
+  height: 2.5em
+
+.select
+  height: 2.5em
+  select
+    height: 2.5em
+
+.textarea
+  height: 2.5em
+
+.input, .textarea
+  transition: all 200ms ease
+  box-shadow: none
+  border-width: 2px
+  padding-left: 1em
+  padding-right: 1em
+
+.select
+  select, &:after
+    border-width: 2px
+
+.control.has-addons
+  .button, .input, .select
+    margin-right: -2px
+
+.notification
+  background-color: #343c3d
+
+.progress
+  &::-webkit-progress-value, &::-moz-progress-bar
+    background-color: #5e6d6f
+
+.card
+  border: 2px solid #343c3d
+  background-color: #282f2f
+  border-radius: .4em
+  .card-header, .card-image img
+    border-radius: .4em .4em 0 0
+  box-shadow: none
+  .card-header
+    box-shadow: none
+  .card-footer, .card-header
+    background-color: rgba(18, 18, 18, 0.2)
+  .card-footer, .card-footer-item
+    border-width: 2px
+    border-color: #343c3d
+
+.notification
+  &.is-white a:not(.button)
+    color: #0a0a0a
+    text-decoration: underline
+  &.is-black a:not(.button)
+    color: #fff
+    text-decoration: underline
+  &.is-light a:not(.button)
+    color: #282f2f
+    text-decoration: underline
+  &.is-dark a:not(.button)
+    color: #ecf0f1
+    text-decoration: underline
+  &.is-danger a:not(.button), &.is-info a:not(.button), &.is-link a:not(.button), &.is-primary a:not(.button), &.is-success a:not(.button), &.is-warning a:not(.button)
+    color: #fff
+    text-decoration: underline
+
+.tag
+  border-radius: .4em
+
+.menu-list a
+  transition: all 300ms ease
+
+.modal-card-body
+  background-color: #282f2f
+
+.modal-card-foot, .modal-card-head
+  border-color: #343c3d
+
+.message-header
+  font-weight: 700
+  background-color: #343c3d
+  color: #fff
+
+.message-body
+  border-width: 2px
+  border-color: #343c3d
+
+.navbar
+  border-radius: .4em
+  &.is-transparent
+    background: 0 0
+  &.is-primary .navbar-dropdown a.navbar-item.is-active
+    background-color: #1abc9c
+
+@media screen and (max-width: 1023px)
+  .navbar .navbar-menu
+    background-color: #375a7f
+    border-radius: 0 0 .4em .4em
+
+.hero .navbar, body > .navbar
+  border-radius: 0
+
+.pagination-link, .pagination-next, .pagination-previous, .panel-block, .panel-heading, .panel-tabs
+  border-width: 2px
+
+.panel-block:first-child, .panel-heading:first-child, .panel-tabs:first-child
+  border-top-width: 2px
+
+.panel-heading
+  font-weight: 700
+
+.panel-tabs a
+  border-width: 2px
+  margin-bottom: -2px
+  &.is-active
+    border-bottom-color: #17a689
+
+.panel-block
+  &:hover
+    color: #1dd2af
+    .panel-icon
+      color: #1dd2af
+  &.is-active .panel-icon
+    color: #17a689
+
+.tabs
+  a
+    border-bottom-width: 2px
+    margin-bottom: -2px
+  &.is-boxed
+    a
+      border-width: 2px
+    li.is-active a
+      background-color: #1f2424
+  &.is-toggle li a
+    border-width: 2px
+    margin-bottom: 0
+
+.hero
+  &.is-black .navbar .navbar-dropdown .navbar-item:hover, &.is-danger .navbar .navbar-dropdown .navbar-item:hover, &.is-dark .navbar .navbar-dropdown .navbar-item:hover, &.is-info .navbar .navbar-dropdown .navbar-item:hover, &.is-light .navbar .navbar-dropdown .navbar-item:hover, &.is-link .navbar .navbar-dropdown .navbar-item:hover, &.is-primary .navbar .navbar-dropdown .navbar-item:hover, &.is-success .navbar .navbar-dropdown .navbar-item:hover, &.is-warning .navbar .navbar-dropdown .navbar-item:hover, &.is-white .navbar .navbar-dropdown .navbar-item:hover
+    background-color: transparent
+
+/*# sourceMappingURL=bulmaswatch.min.css.map
