@@ -1,17 +1,17 @@
 ---
 templateKey: coffee-page
+date: 2018-02-21T08:00:00.000Z
 path: kianjege-aa
 title: Kianjege AA
-date: 2018-02-21T08:00:00.000Z
-description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
-bags: '20'
+offeringBy: LYP Ltd
 origin: Kenya
-offeringBy: Kenya
-status: Kenya
-house: Kenya
-harvest: 2018-02-21T08:00:00.000Z
-process: Kenya
-elevation: '100'
+status: SPOT
+house: 'Spokane, Portland'
+bags: '20'
+harvest: 2017-01-31T00:00:00-08:00
+elevation: '1600'
+process: Full Wash
+description: 'Plum, grapefruit, caramel, sweet orange, melon, medium body.'
 ---
 
 ‘Kianjege’ is a Kikuyu word meaning Porcupine. Southwest of Mt. Kenya, this area is famous for arrow-root and the native porcupines who consume it.
