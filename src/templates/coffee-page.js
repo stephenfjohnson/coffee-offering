@@ -48,6 +48,7 @@ export default ({ data }) => {
       house={post.frontmatter.house}
       bags={post.frontmatter.bags}
       harvest={post.frontmatter.harvest}
+      elevation={post.frontmatter.elevation}
       process={post.frontmatter.process}
       description={post.frontmatter.description}
     />
