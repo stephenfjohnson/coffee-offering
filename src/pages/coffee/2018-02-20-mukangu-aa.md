@@ -1,11 +1,17 @@
 ---
 templateKey: coffee-page
+date: 2018-02-21T08:00:00.000Z
 path: mukangu-aa
 title: Mukangu AA
-date: 2018-02-21T08:00:00.000Z
-description: 'Dark chocolate, cinnamon, blackberry, vermouth, lime, firm body.'
-bags: '20'
+offeringBy: LYP Ltd
 origin: Kenya
+status: SPOT
+house: Spokane
+bags: '20'
+harvest: 2017-01-31T00:00:00-08:00
+elevation: '1600'
+process: Full Wash
+description: 'Dark chocolate, cinnamon, blackberry, vermouth, lime, firm body.'
 ---
 The Mukangu AA coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Mukangu wet mill which sources coffee from dozens of nano-farmers in the surrounding vicinity who's offering is exported by the coop.
 
