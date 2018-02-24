@@ -167,4 +167,5 @@ const Icon = styled.div`
 const Span = styled.span`
   display: block;
   line-height: 1;
+  margin: 0;
 `;
