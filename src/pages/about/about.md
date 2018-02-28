@@ -16,16 +16,25 @@ Coffees listed on this platform are owned and held by producers and trading comp
 
 ## Sourcing
 
-Numerous sourcing methods are viable for getting coffee from origin to end buyer. Please review vendor info for the sourcing practices of a specific offering.
+Numerous sourcing methods are viable for getting coffee from origin to end buyer.\
+Review coffee bios for the sourcing structure of various offerings.
 
 ## Sustainable Agriculture
 
-Sustainable agriculture is farming methods based on a healthy understanding of ecosystem services, the study of relationships between organisms and their environment.
+Sustainable agriculture means farming methods based on a healthy understanding of ecosystem services; the study of relationships between organisms and their environment.
 
 ## Social Empowerment
 
-In order to list your coffee on our site, we want you to empower the communities that bring amazing coffee to the world! Let us know how you are doing this by creating an account and filling out a contact form.
+We want to empower the communities that bring amazing coffee to the world! Some coffees are directly related to international development projects. These are known as Cause Coffees. 
+
+## Listing
+
+To list your offering, create an account.
+
+## Ordering
+
+To order coffee, create an account.
 
 
 
-\- CONTACT FORM -
+\- SIGN UP FORM -
