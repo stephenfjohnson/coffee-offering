@@ -1,24 +1,31 @@
 ---
 templateKey: about-page
 path: /about
-title: About our values
+title: About Coffee Offering
 ---
-### Single Origin Offerings
+## Purpose
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+* Streamline global coffee offerings as digital listings.
+* Consolidate sourcing options for buyers.
+* Increase market access for sellers.
+* Encourage trade growth.
 
-### Sustainable Agriculture
+## Coffees
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Coffees listed on this platform are owned and held by producers and trading companies around the world and listed here for your convenience.
 
-### Direct Sourcing
+## Sourcing
 
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Numerous sourcing methods are viable for getting coffee from origin to end buyer. Please review vendor info for the sourcing practices of a specific offering.
 
-### Womens Empowerment
+## Sustainable Agriculture
 
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Sustainable agriculture is farming methods based on a healthy understanding of ecosystem services, the study of relationships between organisms and their environment.
 
-**Cooperative Partnerships**
+## Social Empowerment
 
-It's super totes ideal when the coffees we list on this website are attached to hella moral and sustainable global coops.
+In order to list your coffee on our site, we want you to empower the communities that bring amazing coffee to the world! Let us know how you are doing this by creating an account and filling out a contact form.
+
+
+
+\- CONTACT FORM -
