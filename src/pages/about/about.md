@@ -7,25 +7,37 @@ title: About Coffee Offering
 
 * Streamline global coffee offerings as digital listings.
 * Consolidate sourcing options for buyers.
-* Increase market access for sellers.
+* Increase market access of coffee supply.
 * Encourage trade growth.
 
 ## Coffees
 
 Coffees listed on this platform are owned and held by producers and trading companies around the world and listed here for your convenience.
 
+\
+NOTE: Unless otherwise stated, products listed on this site are not the property of Coffee Offering and Coffee Offering assumes no responsibility for these products.
+
 ## Sourcing
 
-Numerous sourcing methods are viable for getting coffee from origin to end buyer.\
-Review coffee bios for the sourcing structure of various offerings.
+Numerous sourcing methods are viable for getting coffee from the producer to the end customer.
+
+Review info provided by the Listing Company for details about the sourcing structure of each offering.
 
 ## Sustainable Agriculture
 
-Sustainable agriculture means farming methods based on a healthy understanding of ecosystem services; the study of relationships between organisms and their environment.
+Sustainable agriculture means farming methods based on a healthy understanding of ecosystem services; the study of relationships between organisms and their environment. Respect of the land is one thing, respect for fellow people is another. Both are mandatory for prosperous social enterprise.
 
-## Social Empowerment
+## The Coffee Belt
 
-We want to empower the communities that bring amazing coffee to the world! Some coffees are directly related to international development projects. These are known as Cause Coffees. 
+Due to forces of nature viable coffee growing regions are shifting, creating opportunity for _new_ origins. Because of this reality, the following economic development is necessary:
+
+* Recognizing new origins
+* Increasing production worldwide
+* Extensive global inventory listing
+* Information sharing for compliance and growth
+* Assisting market growth by connecting buyers and sellers
+
+
 
 ## Listing
 
@@ -34,7 +46,5 @@ To list your offering, create an account.
 ## Ordering
 
 To order coffee, create an account.
-
-
 
 \- SIGN UP FORM -
