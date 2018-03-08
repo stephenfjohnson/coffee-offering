@@ -14,17 +14,13 @@ intro:
       text: |
         delete this Text field.
     - image: ''
-      text: "Publish Your Offering to Global Inventory -------------------\nthis should be a title ^ --------------------------------------\n\n\nPublish your Custom Offering List to Global Inventory and enable both domestic and international buyers to find your coffees in our advanced search. -----------------------------\n\n1.\tAfter creating your first Offering List you will have the option to Publish Listing to our inventory. Publishing your listing is strongly encouraged as it enables our growing user base to find your coffee in our advanced Global Inventory search engine.\nEither way, you will be able to use your custom url as a digital offering sheet.\n2.\tWhen a prospective buyer with a Customer Account requests Order Inquiry for your offering, you will receive their request directly from lead@coffeeoffering.com.\nThis helps filter seriously buyers and generate more leads for your company.\n3.\tLeads will be available for seven (7) U.S. business days. After seven (7) days you may choose to Extend Lead or let it expire.\n"
+      text: "Publish Your Offering to Global Inventory -------------------\nadd new Title field^ ----------------------------------------\n\n\nPublish your Custom Offering List to Global Inventory and enable both domestic and international buyers to find your coffees in our advanced search. -----------------------------\nadd new Header field^ --------------------------------------\n\n1.\tAfter creating your first Offering List you will have the option to Publish Listing to our inventory. Publishing your listing is strongly encouraged as it enables our growing user base to find your coffee in our advanced Global Inventory search engine.\nEither way, you will be able to use your custom url as a digital offering sheet.\n2.\tWhen a prospective buyer with a Customer Account requests Order Inquiry for your offering, you will receive their request directly from lead@coffeeoffering.com.\nThis helps filter seriously buyers and generate more leads for your company.\n3.\tLeads will be available for seven (7) U.S. business days. After seven (7) days you may choose to Extend Lead or let it expire.\n"
     - image: /img/tutorials.png
       text: |
         delete this Text field.
     - image: ''
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+      text: |
+        delete this Text field.
   heading: ''
   description: "1.\tCreate a Company Account. 2.\tSelect between Create Offering List, Publish Offering List, or Edit Offering List. 3.\tFill in data about your entire offering. Detailed custom specifications add significant clarity and showcase the uniqueness of your coffees for the world to see. 4.\tSubmit form. Your will not be charged until your Listing is verified. Most Listings are verified in less than 48 hours. 5.\tUpon verification you will receive a custom url link for your Offering List. You can now view your Listing live on Coffee Offering as well as use this url as your digital offering sheet. 6.\tWhen a prospective buyer with a Customer Account is interested in your offering, will receive a request directly from lead@coffeeoffering.com."
 main:
