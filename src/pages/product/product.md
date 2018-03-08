@@ -1,74 +1,52 @@
 ---
 templateKey: product-page
 path: /products
-title: Supreme Coffee
+title: How to use Coffee Offering
 image: /img/jumbotron.jpg
-heading: What we offer
+heading: Custom Offering List
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Create a Custom Offering List for your company. Coffee Offering compiles the
+  unique attributes of your coffees and generates a visually pleasing Offering
+  List to show your clientele.
 intro:
   blurbs:
     - image: /img/coffee.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+      text: |
+        delete this Text field.
+    - image: ''
+      text: "Publish Your Offering to Global Inventory -------------------\nthis should be a title ^ --------------------------------------\n\n\nPublish your Custom Offering List to Global Inventory and enable both domestic and international buyers to find your coffees in our advanced search. -----------------------------\n\n1.\tAfter creating your first Offering List you will have the option to Publish Listing to our inventory. Publishing your listing is strongly encouraged as it enables our growing user base to find your coffee in our advanced Global Inventory search engine.\nEither way, you will be able to use your custom url as a digital offering sheet.\n2.\tWhen a prospective buyer with a Customer Account requests Order Inquiry for your offering, you will receive their request directly from lead@coffeeoffering.com.\nThis helps filter seriously buyers and generate more leads for your company.\n3.\tLeads will be available for seven (7) U.S. business days. After seven (7) days you may choose to Extend Lead or let it expire.\n"
     - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
+      text: |
+        delete this Text field.
+    - image: ''
       text: >
         We believe that good coffee has the power to bring people together.
         That’s why we decided to turn a corner of our shop into a cozy meeting
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+  heading: ''
+  description: "1.\tCreate a Company Account. 2.\tSelect between Create Offering List, Publish Offering List, or Edit Offering List. 3.\tFill in data about your entire offering. Detailed custom specifications add significant clarity and showcase the uniqueness of your coffees for the world to see. 4.\tSubmit form. Your will not be charged until your Listing is verified. Most Listings are verified in less than 48 hours. 5.\tUpon verification you will receive a custom url link for your Offering List. You can now view your Listing live on Coffee Offering as well as use this url as your digital offering sheet. 6.\tWhen a prospective buyer with a Customer Account is interested in your offering, will receive a request directly from lead@coffeeoffering.com."
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: Customer Account
+  description: "Browse and search a detailed global inventory of coffee offerings and connect directly with coffee suppliers from around the world. -------\n\n1.\tSelect create Customer Account.\n2.\tFill out contact form.\n3.\tVerify your account via email.\n4.\tSearch Global Coffee Inventory for detailed offerings.\n5.\tClick on Order Inquiry to get in touch with supplier!\n"
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    image: ''
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    image: ''
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: E.F. Kaurismokl
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      The first time I tried Coffee Offering, I sold
+      10,000,000,000,000,000,000,000,000,000,000 bags of coffee. (not true, just
+      kidding.)
+  - author: Phil Pertdert
+    quote: I always find the exact coffee I want to buy.
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
