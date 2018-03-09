@@ -5,10 +5,10 @@ title: About Coffee Offering
 ---
 ## Purpose
 
-* Streamline global coffee offerings as digital listings.
-* Consolidate sourcing options for buyers.
-* Increase market access of coffee supply.
-* Encourage trade growth.
+* Create tasteful digital offering sheets for the coffee industry
+* Showcase a global inventory an with advanced search system
+* Display supply options for coffee buyers
+* Increase market access for coffee suppliers
 
 ## Coffees
 
@@ -36,8 +36,6 @@ Due to forces of nature viable coffee growing regions are shifting, creating opp
 * Extensive global inventory listing
 * Information sharing for compliance and growth
 * Assisting market growth by connecting buyers and sellers
-
-
 
 ## Listing
 
