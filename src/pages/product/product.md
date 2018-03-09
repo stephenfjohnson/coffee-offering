@@ -11,9 +11,6 @@ description: >-
 intro:
   blurbs:
     - image: /img/coffee.png
-      text: |
-        delete this Text field.
-    - image: ''
       text: "(Title) Publish Offering List --------------------\n\n\n(Heading or Description) Publish your Custom Offering List to Global Inventory and enable both domestic and international buyers to find your coffees in our advanced search. -------------------------------------\n(Text)\n1.\tAfter creating your first Offering List you will have the option to Publish Listing to our inventory. Publishing your listing is strongly encouraged as it enables our growing user base to find your coffee in our advanced Global Inventory search engine.\nEither way, you will be able to use your custom url as a digital offering sheet.\n2.\tWhen a prospective buyer with a Customer Account requests Order Inquiry for your offering, you will receive their request directly from lead@coffeeoffering.com.\nThis helps filter seriously buyers and generate more leads for your company.\n3.\tLeads will be available for seven (7) U.S. business days. After seven (7) days you may choose to Extend Lead or let it expire.\n"
     - image: /img/tutorials.png
       text: |
