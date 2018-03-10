@@ -25,7 +25,7 @@ By using this site the user acknowledges this and agrees to these terms.
 
 ## Coffee Sourcing
 
-Numerous sourcing methods are viable for getting coffee from the producer to the end customer. Please review info provided by the Listing Company for details about the sourcing structure of a given offering.
+Numerous sourcing methods are viable for getting coffee from the producer to the end customer. Please review information provided by the Listing Company for details about the sourcing structure of a given offering.
 
 ## Origin Belt
 
