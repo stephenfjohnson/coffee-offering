@@ -5,17 +5,23 @@ title: About Coffee Offering
 ---
 ## Site Purpose
 
-* Create tasteful digital offering sheets for the coffee industry
-* Showcase a global inventory with an advanced search system
-* Display expansive supply options for coffee buyers
-* Increase market access for coffee suppliers
+Coffee Offering is a supply chain entry point. It was created by coffee professionals with the purpose of:
+
+* C-DOL™ (Custom Digital Offering Sheet™) creation for coffee industry professionals
+* Global inventory of coffee offerings
+* Search engine designed specifically for coffee buyers
+* Precision navigation of coffee supply options
+* Market access for coffee suppliers and distributors
 
 ## Global Inventory
 
-Every offering listed is owned by producers and trading companies around the world respectively. They are listed here for promotion and convenient viewing.
+The Global Inventory* exists as an index of available coffee supply options.
 
-\
-NOTE: Unless otherwise stated, products listed on this site are not the property of Coffee Offering and Coffee Offering assumes no responsibility for these products.
+\*The Global Inventory and Offering Sheets listed are the property of Coffee Offering. The physical product(s) mentioned are owned independently by companies around the world. They are listed here for coffee professionals.
+
+Furthermore, unless otherwise stated, Coffee Offering assumes no responsibility for the physical product(s) represented in the Global Inventory and/or C-DOLs.
+
+By using this site the user acknowledges this and agrees to these terms.
 
 ## Coffee Sourcing
 
@@ -25,9 +31,10 @@ Numerous sourcing methods are viable for getting coffee from the producer to the
 
 Due to forces of nature viable coffee growing regions are shifting, creating opportunity for _new_ origins. In this light, the following economic development is encouraged:
 
-* Recognizing new origins
-* Increasing production worldwide
-* Extensive global inventory listing
+* Recognizing new origins and coffee producers
+* Increasing production to meet worldwide demand
+* Precise offering listings
+* Showcase and navigate the coffee market
 * Information sharing for industry growth
 * Trade acceleration by introducing sellers with buyers
 
