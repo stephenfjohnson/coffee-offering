@@ -36,10 +36,7 @@ main:
     image: /img/products-grid1.jpg
 testimonials:
   - author: E.F. Kaurismokl
-    quote: >-
-      The first time I tried Coffee Offering, I sold
-      10,000,000,000,000,000,000,000,000,000,000 bags of coffee. (not true, just
-      kidding.)
+    quote: 'The first time I tried Coffee Offering, I got like, so many leads.'
   - author: Phil Pertdert
     quote: I always find the exact coffee I want to buy.
 full_image: /img/products-full-width.jpg
