@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import Content, { HTMLContent } from '../components/Content';
 import styled from 'styled-components';
 
+import Contact from '../components/Contact';
+
 import OriginIcon from '../img/originIcon.js';
 import StatusIcon from '../img/statusIcon.js';
 import WarehouseIcon from '../img/warehouseIcon.js';
@@ -108,6 +110,7 @@ export const CoffeePostTemplate = ({ content, contentComponent, title, offeringB
           </div>
         </div>
       </div>
+      <Contact />
     </section>
   );
 };

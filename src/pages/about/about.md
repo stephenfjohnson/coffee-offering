@@ -3,6 +3,7 @@ templateKey: about-page
 path: /about
 title: About Coffee Offering
 ---
+
 ## Site Purpose
 
 * C-DOL™ (Custom Digital Offering List™) creation for coffee industry professionals
@@ -13,9 +14,9 @@ title: About Coffee Offering
 
 ## Global Inventory
 
-The Global Inventory* exists as an index of available coffee offerings as listed by supplying companies.
+The Global Inventory\* exists as an index of available coffee offerings as listed by supplying companies.
 
-\*The Global Inventory and Offering Sheets listed are the property of Coffee Offering. The physical product(s) mentioned are owned independently by companies around the world. They are listed here for coffee professionals.
+The Global Inventory and Offering Sheets listed are the property of Coffee Offering. The physical product(s) mentioned are owned independently by companies around the world. They are listed here for coffee professionals.
 
 Furthermore, unless otherwise stated, Coffee Offering assumes no responsibility for the physical product(s) represented in the Global Inventory and/or C-DOLs.
 
