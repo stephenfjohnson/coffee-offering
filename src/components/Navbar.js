@@ -1,16 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
-
-import logo from '../img/logo.svg';
+import styled from 'styled-components';
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Coffee Offering" />
-          </figure>
+          <Logo>Coffee Offering</Logo>
         </Link>
       </div>
       <div className="navbar-end">
@@ -23,3 +20,7 @@ const Navbar = () => (
 );
 
 export default Navbar;
+
+const Logo = styled.h1`
+  text-transform: uppercase;
+`;

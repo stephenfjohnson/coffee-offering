@@ -112,8 +112,8 @@ export const CoffeePostTemplate = ({ content, contentComponent, title, offeringB
   );
 };
 
-export default ({ data }) => {
-  const { markdownRemark: post } = data;
+export default props => {
+  const { markdownRemark: post } = props.data;
 
   return (
     <CoffeePostTemplate
@@ -136,11 +136,11 @@ export default ({ data }) => {
 };
 
 export const pageQuery = graphql`
-  query CoffeePostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query CoffeePostById($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
       html
       frontmatter {
-        path
         date(formatString: "MMMM DD, YYYY")
         title
         offeringBy
