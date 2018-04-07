@@ -5,17 +5,15 @@ title: About Coffee Offering
 ---
 ## Site Purpose
 
-Coffee Offering is a supply chain entry point. It was created by coffee professionals with the purpose of:
-
-* C-DOL™ (Custom Digital Offering Sheet™) creation for coffee industry professionals
+* C-DOL™ (Custom Digital Offering List™) creation for coffee industry professionals
 * Global inventory of coffee offerings
 * Search engine designed specifically for coffee buyers
-* Precision navigation of coffee supply options
-* Market access for coffee suppliers and distributors
+* Precise navigation of coffee supply options
+* Market access for coffee producers, suppliers and distributors
 
 ## Global Inventory
 
-The Global Inventory* exists as an index of available coffee supply options.
+The Global Inventory* exists as an index of available coffee offerings as listed by supplying companies.
 
 \*The Global Inventory and Offering Sheets listed are the property of Coffee Offering. The physical product(s) mentioned are owned independently by companies around the world. They are listed here for coffee professionals.
 
