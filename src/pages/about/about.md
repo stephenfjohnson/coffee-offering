@@ -40,8 +40,4 @@ Due to forces of nature viable coffee growing regions are shifting, creating opp
 
 ## Create Company Account
 
-Create a **Company Account** and share your digital coffee offerings with interested buyers.
-
-## Create Customer Account
-
-Create a **Customer Account** and search a global inventory of coffee offerings from origins worldwide.
+Create a **Company Account** and publish your coffee offerings for viewers to search in the Global Inventory.
