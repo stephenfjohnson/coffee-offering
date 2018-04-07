@@ -23,20 +23,18 @@ Furthermore, unless otherwise stated, Coffee Offering assumes no responsibility 
 
 By using this site the user acknowledges this and agrees to these terms.
 
-## Coffee Sourcing
+## Coffee Supply Chain
 
 Numerous sourcing methods are viable for getting coffee from the producer to the end customer. Please review information provided by the Listing Company for details about the sourcing structure of a given offering.
 
-## Origin Belt
+## Coffee Origins
 
-Due to forces of nature viable coffee growing regions are shifting, creating opportunity for _new_ origins. In this light, the following economic development is encouraged:
+Due to forces of nature and economics, viable coffee growing regions are expanding, creating opportunity for _new_ origins, new producers, and new coffees. The following practices are encouraged:
 
-* Recognizing new origins and coffee producers
-* Increasing production to meet worldwide demand
-* Precise offering listings
-* Showcase and navigate the coffee market
-* Information sharing for industry growth
-* Trade acceleration by introducing sellers with buyers
+* Recognition of new growing regions and producers
+* Increased production and viability of offerings
+* Trade acceleration and industry growth via information sharing
+* Precise data listing for streamlining coffee distribution by using C-DOLs on CoffeeOffering.com.
 
 ## Create Company Account
 
