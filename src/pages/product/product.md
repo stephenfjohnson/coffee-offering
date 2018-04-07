@@ -1,13 +1,15 @@
 ---
 templateKey: product-page
 path: /products
-title: How to use Coffee Offering
+title: About this site
 image: /img/jumbotron.jpg
-heading: Custom Offering List
+heading: C-DOL Creation
 description: >-
-  Create a Custom Offering List for your company. Coffee Offering compiles the
-  unique attributes of your coffees and generates a visually pleasing Offering
-  List to show your clientele.
+  C-DOL™ (Custom Digital Offering Lists). --- Create a Company Account and
+  publish sophisticated offering lists for coffee buyers. Gone are the days of
+  rough cut excel lists and pdfs. Coffee Offering compiles every detail of your
+  unique coffee offering and generates visually pleasing C-DOLs with customer
+  url's.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -19,7 +21,7 @@ intro:
       text: |
         delete this Text field.
   heading: ''
-  description: "1.\tCreate a Company Account. 2.\tSelect between Create Offering List, Publish Offering List, or Edit Offering List. 3.\tFill in data about your entire offering. Detailed custom specifications add significant clarity and showcase the uniqueness of your coffees for the world to see. 4.\tSubmit form. Your will not be charged until your Listing is verified. Most Listings are verified in less than 48 hours. 5.\tUpon verification you will receive a custom url link for your Offering List. You can now view your Listing live on Coffee Offering as well as use this url as your digital offering sheet. 6.\tWhen a prospective buyer with a Customer Account is interested in your offering, will receive a request directly from lead@coffeeoffering.com."
+  description: "1.\tCreate a Company Account. 2.\n\tSelect between Create Offering List, Publish Offering List, or Edit Offering List. 3.\tFill in data about your entire offering. Detailed custom specifications add significant clarity and showcase the uniqueness of your coffees for the world to see. 4.\tSubmit form. Your will not be charged until your Listing is verified. Most Listings are verified in less than 48 hours. 5.\tUpon verification you will receive a custom url link for your Offering List. You can now view your Listing live on Coffee Offering as well as use this url as your digital offering sheet. 6.\tWhen a prospective buyer with a Customer Account is interested in your offering, will receive a request directly from lead@coffeeoffering.com."
 main:
   heading: Create Customer Account
   description: "Browse and search a detailed global inventory of coffee offerings and connect directly with coffee suppliers from around the world. -------\n\n1.\tSelect create Customer Account.\n2.\tFill out contact form.\n3.\tVerify your account via email.\n4.\tSearch Global Coffee Inventory for detailed offerings.\n5.\tClick on Order Inquiry to get in touch with supplier!\n"
@@ -54,20 +56,20 @@ pricing:
         - Green or roasted beans"
         - One or two varieties of beans"
       plan: Small
-      price: '50'
+      price: '60'
     - description: 'Great for avid drinkers, java-loving couples and bigger crowds'
       items:
         - 6 lbs of coffee per month
         - Green or roasted beans
         - Up to 4 different varieties of beans
       plan: Big
-      price: '80'
+      price: '90'
     - description: Want a few tiny batches from different varieties? Try our custom plan
       items:
         - Whatever you need
         - Green or roasted beans
         - Unlimited varieties
       plan: Custom
-      price: '??'
+      price: '1100'
 ---
 
