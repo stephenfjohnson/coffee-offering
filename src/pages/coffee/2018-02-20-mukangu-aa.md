@@ -6,7 +6,7 @@ title: Mukangu AA
 offeringBy: LYP Ltd
 origin: Kenya
 status: SPOT
-house: 'Spokane, Portland'
+house: Spokane WA/ Portland OR
 bags: '20'
 harvest: 2017-01-31T08:00:00.000Z
 elevation: '1600'
