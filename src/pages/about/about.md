@@ -3,38 +3,36 @@ templateKey: about-page
 path: /about
 title: About Coffee Offering
 ---
-
 ## Site Purpose
 
-* C-DOL™ (Custom Digital Offering List™) creation for coffee industry professionals
-* Global inventory of coffee offerings
-* Search engine designed specifically for coffee buyers
-* Precise navigation of coffee supply options
-* Market access for coffee producers, suppliers and distributors
+Coffee Offering is currently building an inventory of unique coffees in order to promote new origins, facilitate market access for suppliers and overall simplify the search process for coffee buyers.
 
-## Global Inventory
+This site is under construction, but we published this beta list of SPOT coffees for the 2018 Specialty Coffee Expo.
 
-The Global Inventory\* exists as an index of available coffee offerings as listed by supplying companies.
+## Origin Access
 
-The Global Inventory and Offering Sheets listed are the property of Coffee Offering. The physical product(s) mentioned are owned independently by companies around the world. They are listed here for coffee professionals.
-
-Furthermore, unless otherwise stated, Coffee Offering assumes no responsibility for the physical product(s) represented in the Global Inventory and/or C-DOLs.
-
-By using this site the user acknowledges this and agrees to these terms.
-
-## Coffee Supply Chain
-
-Numerous sourcing methods are viable for getting coffee from the producer to the end customer. Please review information provided by the Listing Company for details about the sourcing structure of a given offering.
-
-## Coffee Origins
-
-Due to forces of nature and economics, viable coffee growing regions are expanding, creating opportunity for _new_ origins, new producers, and new coffees. The following practices are encouraged:
+Due to forces of nature and economics, viable coffee growing regions are expanding, creating opportunity for _new_ origins, new producers, and new coffees. Due to the rise of the specialty industry, places which have not grown coffee for 100 years or more are now able to.\
+The following practices are encouraged:
 
 * Recognition of new growing regions and producers
-* Increased production and viability of offerings
-* Trade acceleration and industry growth via information sharing
-* Precise data listing for streamlining coffee distribution by using C-DOLs on CoffeeOffering.com.
+* Increased production and visibility offerings
+* Trade acceleration via information sharing
+* Streamlining coffee distribution by listing your offering on CoffeeOffering.com
 
-## Create Company Account
+## List Your Coffee Here
 
-Create a **Company Account** and publish your coffee offerings for viewers to search in the Global Inventory.
+Fill out the contact form with details about your current offerings to see if you qualify!
+
+
+
+
+
+
+
+
+
+
+
+> \*By using this site the user acknowledges that the contents of this site are solely for information purposes and agrees not to copy or redistribute this information without permission from site admin.
+>
+> \*\*No baristas were harmed in the making of this website.
