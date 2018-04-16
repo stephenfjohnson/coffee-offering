@@ -13,8 +13,6 @@ elevation: '1600'
 process: Full Wash
 description: 'Dark chocolate, cinnamon, blackberry, vermouth, lime, firm body.'
 ---
-The Mukangu AA coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Mukangu wet mill which sources coffee from dozens of nano-farmers in the surrounding vicinity who's offering is exported by the coop.
+The Mukangu AA coffee was personally sourced and directly imported from the Kibirigwi Coop in the Kirinyaga region of Kenya. It is named after the local Mukangu wet mill which buys cherry from dozens of very small farmers in the surrounding vicinity before it is sold and exported by the co-op. The fact that this coffee is SPOT in the U.S. is a testament to the importer's confidence in the future of the Kenyan coffee industry.
 
-This coffee is hand picked from fertile volcanic soil at 1600m before undergoing a full-washed process. The importer hopes to be part of encouraging local organic initiatives. For now it is an example of some of the best bourbon SL-28 and SL-34 lots coming from this region!
-
-\[order/contact form at bottom]
+This coffee is hand picked from fertile volcanic soil at 1600m before undergoing a full-washed process. LYP intends to be part of encouraging local organic initiatives. This coffee is an example of some of the best bourbon SL-28 and SL-34 beans coming from this region!
