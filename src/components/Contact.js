@@ -49,7 +49,7 @@ class ContactPage extends React.Component {
                     <div className="column">
                       <label className="label">First Name</label>
                       <div className="control has-icons-left has-icons-right">
-                        <input className="input" type="text" name="name" placeholder="Enter Your First Name" onChange={this.handleChange} />
+                        <input className="input" type="text" name="first-name" placeholder="Enter Your First Name" onChange={this.handleChange} />
                         <span className="icon is-small is-left">
                           <i className="fas fa-envelope" />
                         </span>
@@ -58,7 +58,7 @@ class ContactPage extends React.Component {
                     <div className="column">
                       <label className="label">Last Name</label>
                       <div className="control has-icons-left has-icons-right">
-                        <input className="input" type="text" name="name" placeholder="Enter Your Last Name" onChange={this.handleChange} />
+                        <input className="input" type="text" name="last-name" placeholder="Enter Your Last Name" onChange={this.handleChange} />
                         <span className="icon is-small is-left">
                           <i className="fas fa-envelope" />
                         </span>
