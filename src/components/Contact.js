@@ -16,6 +16,8 @@ class ContactPage extends React.Component {
   }
 
   handleChange = e => {
+    console.log(e.target.value);
+
     this.setState({ [e.target.name]: e.target.value });
   };
 
@@ -97,12 +99,12 @@ class ContactPage extends React.Component {
                       <label className="label">Subject</label>
                       <div className="control">
                         <div className="select">
-                          <select>
-                            <option>I'm Interested In</option>
-                            <option>Ordering some great coffee</option>
-                            <option>Listing my coffee on this website</option>
-                            <option>Media connection</option>
-                            <option>Other inquiry</option>
+                          <select name="contact-reason" onChange={this.handleChange}>
+                            <option value="Default">I'm Interested In</option>
+                            <option value="ordering-coffee">Ordering some great coffee</option>
+                            <option value="list-coffee">Listing my coffee on this website</option>
+                            <option value="media">Media connection</option>
+                            <option value="other">Other inquiry</option>
                           </select>
                         </div>
                       </div>
