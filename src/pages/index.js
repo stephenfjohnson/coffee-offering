@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
         <section className="hero is-medium is-dark">
           <Hero photo={HeroPhoto} className="hero-body">
             <div className="container">
-              <h1 className="title">Global Inventory</h1>
+              <h1 className="title">Inventory</h1>
             </div>
           </Hero>
         </section>

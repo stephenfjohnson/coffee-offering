@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Contact from '../components/Contact';
 import Content, { HTMLContent } from '../components/Content';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
@@ -17,6 +18,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           </div>
         </div>
       </div>
+      <Contact />
     </section>
   );
 };
