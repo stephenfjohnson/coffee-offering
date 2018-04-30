@@ -5,7 +5,7 @@ title: About Coffee Offering
 ---
 Coffee Offering is currently a list of information about coffees available for wholesale.
 
-## List Your Coffee Here
+## Hit us up!
 
 Fill out the contact form with details about your interest.
 
