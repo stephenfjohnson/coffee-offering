@@ -7,7 +7,7 @@ offeringBy: Coming soon
 origin: Bali
 status: Forward
 house: Indo
-bags: '10000'
+bags: '11000'
 harvest: 2018-07-01T07:00:00.000Z
 elevation: '1600'
 process: Coming soon
