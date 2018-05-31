@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: About Coffee Offering
 ---
-Coffee Offering is an international coffee company specializing in inventories and quality control. Please contact us for project analysis, quotes and other questions. 
+Coffee Offering is an international coffee company specializing in green coffee inventories, quality control and marketing. Please contact us for contract pricing, wholesale green coffee inquiries and other questions. 
 
 ## Contact
 
