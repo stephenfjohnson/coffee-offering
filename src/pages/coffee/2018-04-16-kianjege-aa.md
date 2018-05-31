@@ -2,7 +2,7 @@
 templateKey: coffee-page
 date: 2018-04-16T19:42:34.985Z
 path: bali
-title: Bali
+title: Highland
 offeringBy: Coming soon
 origin: Bali
 status: Forward
