@@ -2,7 +2,7 @@
 templateKey: coffee-page
 date: 2018-02-21T01:09:18.167Z
 path: kenyaa
-title: Kenya AA
+title: AA
 offeringBy: Private LTD
 origin: Kenya
 status: SPOT
