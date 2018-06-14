@@ -7,7 +7,7 @@ offeringBy: PRR Imports
 origin: Papua New Guinea
 status: Forward
 house: Preship
-bags: '21000'
+bags: '2100'
 harvest: 2018-03-30T22:14:57.000Z
 elevation: '1500'
 process: Washed
