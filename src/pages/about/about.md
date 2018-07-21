@@ -1,9 +1,9 @@
 ---
 templateKey: about-page
 path: /about
-title: About Coffee Offering
+title: About Coffee Offering Worldwide
 ---
-Coffee Offering is an international coffee company specializing in green coffee inventories, quality control and marketing. Please contact us for contract pricing, wholesale green coffee inquiries and other questions. 
+COW is a coffee company. We specialize in terroir data, green inventories, quality control and cross-cultural marketing. We work throughout the supply chain worldwide to inform and promote coffee industry growth.
 
 ## Contact
 
