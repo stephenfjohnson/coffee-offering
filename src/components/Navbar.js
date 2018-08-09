@@ -10,7 +10,7 @@ const Navbar = () => (
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <Logo color="white" width="40" />
-          <LogoText>Coffee Offering</LogoText>
+          <LogoText>Coffee Offering Worldwide</LogoText>
         </Link>
       </div>
       <div className="navbar-end">
