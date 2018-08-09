@@ -2,12 +2,15 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
+import Logo from '../img/logo';
+
 const Navbar = () => (
   <nav className="navbar is-transparent">
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <Logo>Coffee Offering</Logo>
+          <Logo color="white" width="40" />
+          <LogoText>Coffee Offering</LogoText>
         </Link>
       </div>
       <div className="navbar-end">
@@ -21,6 +24,7 @@ const Navbar = () => (
 
 export default Navbar;
 
-const Logo = styled.h1`
+const LogoText = styled.h1`
   text-transform: uppercase;
+  margin-left: 10px;
 `;
