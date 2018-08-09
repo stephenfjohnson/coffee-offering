@@ -3,9 +3,9 @@ templateKey: about-page
 path: /about
 title: About Coffee Offering Worldwide
 ---
-COW is a digital marketing company. We specialize in coffee: terroir data, green inventories, quality control and cross-cultural marketing.
+COW is a digital coffee marketing company. We specialize in terroir data, green inventories, quality control and cross-cultural marketing.
 
-COW operatives are experienced consultants and media professionals. We work throughout the supply chain worldwide to inform and promote industry growth.
+COW operatives are experienced consultants and media professionals. We work throughout the supply chain worldwide to promote industry growth.
 
 ## Contact
 
