@@ -8,7 +8,7 @@ origin: China
 status: PRESHIP
 house: YUNNAN
 bags: '300'
-harvest: 2019-03-01T19:00:00-08:00
+harvest: 2019-03-02T03:00:00.000Z
 elevation: '1500'
 process: WASHED
 description: >-
@@ -22,8 +22,8 @@ description: >-
   mellow spice which mingles with the soft orange citrus and then, caramel (no,
   not salted.) Unlike many catimors, the acidity and "spicyness" play together
   in this cup, revealing a delicate brown sugar sweetness. Bottom of the cup,
-  room temperature, and the sweetness and spice have left a bit of green tea.
-  Flexible, dynamic, complex yet mellow.
+  room temperature, and the matrix has left a bit of green tea. Flexible,
+  dynamic, complex yet mellow.
 ---
 Man Qing Coffee Farm is located in China's deep south, near the Laos border. This family farm is premiering their specialty coffee to the U.S. for the first time, in collaboration with Coffee Offering Worldwide. This offering is exceptional because the farmer, mill, and exporter are all the same entity. Man Qing does it all.
 
