@@ -25,9 +25,47 @@ description: >-
   room temperature, and the matrix has left a bit of green tea. Flexible,
   dynamic, complex yet mellow.
 ---
-Man Qing Coffee Farm is located in China's deep south, near the Laos border. This family farm is premiering their specialty coffee to the U.S. for the first time, in collaboration with Coffee Offering Worldwide. This offering is exceptional because the farmer, mill, and exporter are all the same entity. Man Qing does it all.
+Location: China, Yunnan, Pu’er, Jian Cheng County, Man Qing Farm
 
-2018/19 harvest completion expected by March 2019.
+Elevation: 1250-1500m
+
+Species: Chinese Catimor
+
+Process: Semi-Wash and Honey
+
+Harvest: Late October - Early March
+
+1 Container Specialty Available: April 2019
+
+The coffee trees at Man Qing Farm are of the Chinese Catimor subspecies. These particular trees were bred specially for this farm in 2009, and first harvested at the end of 2013. The 2018/19 coffee crop marks the Man Qing Coffee Farms 6th annual harvest.
+
+Local Dai and Han villages can be seen on the horizon at the crest of the hill, well above cloud level, the Man Qing Mill is a 2 to 3 hour drive from the nearest town ___ in the valley below.
+
+This family owned farm employs about 30 households and provides housing for 20 of these families on site.
+
+The Man Qing Coffee Farm has submitted their finest coffees to the Yunnan Coffee Exchange’s annual ‘Best of Yunnan Green Competition’ and has received a consistent quality score of 93 for 3 years in a row.
+
+.
+
+.
+
+.
+
+SEMI WASHED: After picking, fresh cherry is delivered to the mill where it is weighed and pickers are paid accordingly. It is then dropped into the syphon tank where fresh mountain spring water rinses the cherries before the are sent through the depulping machine and deposited into fermentation tanks for 30 hours. After fermenting evenly, the parchment beans are run through the washing channels to be “floated” which means that the lighter, less dense beans flow first and the last, most dense beans are sorted last. At the bottom of the wet mill channels the beans are rinsed one more time before being spread out  on raised “African” drying beds to dry for up to 15 days until optimal 12% moisture content has been achieved.
+
+.
+
+.
+
+.
+
+HONEY PROCESS: After picking, the fresh cherry is de-pulped but, instead of rinsing, is spread of the raised “African” drying-beds where it is raked/turned as it sun dried for up to 30 days until ideal moisture content of 12% is reached.
+
+.
+
+.
+
+.
 
 Please inquire for further information.
 
