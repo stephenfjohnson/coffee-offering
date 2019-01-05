@@ -6,9 +6,9 @@ title: Vietnam
 offeringBy: Coming soon
 origin: Vietnam
 status: PRESHIP
-house: HCM
+house: Ho Chi Minh
 bags: '200'
-harvest: 2018-07-01T07:00:00.000Z
+harvest: 2019-01-05T00:00:00-08:00
 elevation: '1300'
 process: Coming soon
 description: Coming soon
