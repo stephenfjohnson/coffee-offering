@@ -8,7 +8,7 @@ origin: Thailand
 status: PRESHIP
 house: BKK
 bags: '30'
-harvest: 2019-02-28T19:20:10-08:00
+harvest: 2019-03-01T03:20:10.000Z
 elevation: '1500'
 process: FULL WASH
 description: >-
