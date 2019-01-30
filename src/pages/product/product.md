@@ -2,7 +2,7 @@
 templateKey: product-page
 path: /products
 title: About this site
-image: /img/jumbotron.jpg
+image: /img/img_2811.jpg
 heading: C-DOL Creation
 description: >-
   C-DOL™ (Custom Digital Offering Lists). --- Create a Company Account and
