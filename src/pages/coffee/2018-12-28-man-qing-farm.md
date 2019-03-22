@@ -7,7 +7,7 @@ offeringBy: Man Qing Farm
 origin: China
 status: PRESHIP
 house: YUNNAN
-bags: '300'
+bags: '198'
 harvest: 2019-03-02T03:00:00.000Z
 elevation: '1500'
 process: WASHED
@@ -35,7 +35,7 @@ Process: Semi-Wash and Honey
 
 Harvest: Late October - Early March
 
-1 Container Specialty Available: April 2019
+1st Container Specialty Available: March 2019
 
 The coffee trees at Man Qing Farm are of the Chinese Catimor subspecies. These particular trees were bred specially for this farm in 2009, and first harvested at the end of 2013. The 2018/19 coffee crop marks the Man Qing Coffee Farms 6th annual harvest.
 
@@ -47,23 +47,7 @@ The Man Qing Coffee Farm has submitted their finest coffees to the Yunnan Coffee
 
 .
 
-.
-
-.
-
-SEMI WASHED: After picking, fresh cherry is delivered to the mill where it is weighed and pickers are paid accordingly. It is then dropped into the syphon tank where fresh mountain spring water rinses the cherries before the are sent through the depulping machine and deposited into fermentation tanks for 30 hours. After fermenting evenly, the parchment beans are run through the washing channels to be “floated” which means that the lighter, less dense beans flow first and the last, most dense beans are sorted last. At the bottom of the wet mill channels the beans are rinsed one more time before being spread out  on raised “African” drying beds to dry for up to 15 days until optimal 12% moisture content has been achieved.
-
-.
-
-.
-
-.
-
-HONEY PROCESS: After picking, the fresh cherry is de-pulped but, instead of rinsing, is spread of the raised “African” drying-beds where it is raked/turned as it sun dried for up to 30 days until ideal moisture content of 12% is reached.
-
-.
-
-.
+FULL WASHED: After picking, fresh cherry is delivered to the mill where it is weighed and pickers are paid accordingly. It is then dropped into the syphon tank where fresh mountain spring water rinses the cherries before the are sent through the depulping machine and deposited into fermentation tanks for 30 hours. After fermenting evenly, the parchment beans are run through the washing channels to be “floated” which means that the lighter, less dense beans flow first and the last, most dense beans are sorted last. At the bottom of the wet mill channels the beans are rinsed one more time before being spread out  on raised “African” drying beds to dry for up to 15 days until optimal 12% moisture content has been achieved.
 
 .
 
