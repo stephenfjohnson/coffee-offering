@@ -2,8 +2,8 @@
 templateKey: coffee-page
 date: 2018-12-28T19:07:12.507Z
 path: Yunnan
-title: Man Qing Farm
-offeringBy: Man Qing Farm
+title: Manqing Coffee Estate
+offeringBy: Manqing Coffee Estate
 origin: China
 status: PRESHIP
 house: YUNNAN
