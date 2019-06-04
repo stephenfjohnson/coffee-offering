@@ -22,7 +22,9 @@
     "react-load-script": "0.0.6",
     "styled-components": "^3.1.6"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

@@ -5,7 +5,7 @@ import graphql from 'graphql';
 import styled from 'styled-components';
 
 import Contact from '../components/Contact';
-import HeroPhoto from '../img/coffee.jpg';
+import HeroPhoto from '../img/map.jpg';
 
 function encode(data) {
   return Object.keys(data)
